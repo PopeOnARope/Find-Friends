@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders as expected 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <withProps(withScriptjs(withGoogleMap(Map)))
+    friends={
+        Array [
+            Object {
+              "avatar": "https://placekitten.com/g/25/26",
+              "lat": 32.796421,
+              "lng": -79.9312164,
+              "name": "Jim",
+            },
+          ]
+    }
+    toggleDetails={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "containerElement": <div
+        style={
+                Object {
+                        "height": "400px",
+                      }
+        }
+/>,
+      "friends": Array [
+        Object {
+          "avatar": "https://placekitten.com/g/25/26",
+          "lat": 32.796421,
+          "lng": -79.9312164,
+          "name": "Jim",
+        },
+      ],
+      "googleMapURL": "https://maps.googleapis.com/maps/api/js?key=AIzaSyDpzkd_jDRkpqbXdetfATcqMJ417Mn2jqc&v=3.exp&libraries=geometry,drawing,places",
+      "loadingElement": <div
+        style={
+                Object {
+                        "height": "100%",
+                      }
+        }
+/>,
+      "mapElement": <div
+        style={
+                Object {
+                        "height": "100%",
+                      }
+        }
+/>,
+      "toggleDetails": [Function],
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "containerElement": <div
+          style={
+                    Object {
+                              "height": "400px",
+                            }
+          }
+/>,
+        "friends": Array [
+          Object {
+            "avatar": "https://placekitten.com/g/25/26",
+            "lat": 32.796421,
+            "lng": -79.9312164,
+            "name": "Jim",
+          },
+        ],
+        "googleMapURL": "https://maps.googleapis.com/maps/api/js?key=AIzaSyDpzkd_jDRkpqbXdetfATcqMJ417Mn2jqc&v=3.exp&libraries=geometry,drawing,places",
+        "loadingElement": <div
+          style={
+                    Object {
+                              "height": "100%",
+                            }
+          }
+/>,
+        "mapElement": <div
+          style={
+                    Object {
+                              "height": "100%",
+                            }
+          }
+/>,
+        "toggleDetails": [Function],
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

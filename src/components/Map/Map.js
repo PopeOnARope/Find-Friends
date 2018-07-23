@@ -65,7 +65,7 @@ const requiredProps = {
   mapElement: <div style={{ height: `100%` }} />
 };
 
-const ComposedComponent = compose(
+export const ComposedComponent = compose(
   withProps(requiredProps),
   withScriptjs,
   withGoogleMap

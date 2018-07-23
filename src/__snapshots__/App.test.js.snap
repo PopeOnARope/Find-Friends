@@ -72,82 +72,84 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Unknown>
+      "children": <glamorous(div)>
         <glamorous(div)>
-                <h1>
-                         Welcome 
-                        John Pope
-                        !
-                </h1>
-                <h2>
-                        Let's find your friends!
-                </h2>
-        </glamorous(div)>
-        <Connect(withProps(withScriptjs(withGoogleMap(Map))))
-                friends={
-                        Array [
-                                Object {
-                                  "avatar": "https://placekitten.com/g/35/35",
-                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                  "lat": 32.796421,
-                                  "lng": -79.9312164,
-                                  "name": "Jim",
-                                },
-                                Object {
-                                  "avatar": "https://placekitten.com/g/35/36",
-                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                  "lat": 32.795421,
-                                  "lng": -79.9412164,
-                                  "name": "James",
-                                },
-                                Object {
-                                  "avatar": "https://placekitten.com/g/35/34",
-                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                  "lat": 32.794421,
-                                  "lng": -79.9612164,
-                                  "name": "Jenny",
-                                },
-                              ]
-                }
-                toggleDetails={undefined}
-        />
-        <glamorous(button)
-                className="button"
-                onClick={undefined}
-        >
-                + Add a Friend
-        </glamorous(button)>
-        <Connect(AddFriendForm)
-                isOpened={false}
-        />
-        <label>
-                Select Branding Theme:
-                <select
-                        onChange={[Function]}
+                <glamorous(label)>
+                        Select Branding Theme:
+                        <select
+                                onChange={[Function]}
+                        >
+                                <option
+                                        value="blue"
+                                >
+                                        blue
+                                </option>
+                                <option
+                                        value="CofC"
+                                >
+                                        CofC
+                                </option>
+                                <option
+                                        value="green"
+                                >
+                                        green
+                                </option>
+                                <option
+                                        value="mcDonalds"
+                                >
+                                        mcDonalds
+                                </option>
+                        </select>
+                </glamorous(label)>
+                <glamorous(div)>
+                        <h1>
+                                 Welcome 
+                                John Pope
+                                !
+                        </h1>
+                        <p>
+                                Click on the markers below to view information about each friend, or add new friends below!
+                        </p>
+                </glamorous(div)>
+                <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                        friends={
+                                Array [
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/35",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.796421,
+                                          "lng": -79.9312164,
+                                          "name": "Jim",
+                                        },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/36",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.795421,
+                                          "lng": -79.9412164,
+                                          "name": "James",
+                                        },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/34",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.794421,
+                                          "lng": -79.9612164,
+                                          "name": "Jenny",
+                                        },
+                                      ]
+                        }
+                        toggleDetails={undefined}
+                />
+                <glamorous(button)
+                        className="button"
+                        onClick={undefined}
                 >
-                        <option
-                                value="blue"
-                        >
-                                blue
-                        </option>
-                        <option
-                                value="CofC"
-                        >
-                                CofC
-                        </option>
-                        <option
-                                value="green"
-                        >
-                                green
-                        </option>
-                        <option
-                                value="mcDonalds"
-                        >
-                                mcDonalds
-                        </option>
-                </select>
-        </label>
-</Unknown>,
+                        + Add a Friend
+                </glamorous(button)>
+                <Connect(AddFriendForm)
+                        isOpened={false}
+                />
+        </glamorous(div)>
+</glamorous(div)>,
       "theme": Object {
         "fontFamilyH1": "bebas",
         "primaryDark": "#326ada",
@@ -158,338 +160,45 @@ ShallowWrapper {
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <glamorous(div)>
-            <h1>
-                         Welcome 
-                        John Pope
-                        !
-            </h1>
-            <h2>
-                        Let's find your friends!
-            </h2>
-</glamorous(div)>,
-          <Connect(withProps(withScriptjs(withGoogleMap(Map))))
-            friends={
-                        Array [
-                                    Object {
-                                      "avatar": "https://placekitten.com/g/35/35",
-                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                      "lat": 32.796421,
-                                      "lng": -79.9312164,
-                                      "name": "Jim",
-                                    },
-                                    Object {
-                                      "avatar": "https://placekitten.com/g/35/36",
-                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                      "lat": 32.795421,
-                                      "lng": -79.9412164,
-                                      "name": "James",
-                                    },
-                                    Object {
-                                      "avatar": "https://placekitten.com/g/35/34",
-                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                      "lat": 32.794421,
-                                      "lng": -79.9612164,
-                                      "name": "Jenny",
-                                    },
-                                  ]
-            }
-            toggleDetails={undefined}
-/>,
-          <glamorous(button)
-            className="button"
-            onClick={undefined}
->
-            + Add a Friend
-</glamorous(button)>,
-          <Connect(AddFriendForm)
-            isOpened={false}
-/>,
-          <label>
-            Select Branding Theme:
-            <select
-                        onChange={[Function]}
-            >
-                        <option
-                                    value="blue"
-                        >
-                                    blue
-                        </option>
-                        <option
-                                    value="CofC"
-                        >
-                                    CofC
-                        </option>
-                        <option
-                                    value="green"
-                        >
-                                    green
-                        </option>
-                        <option
-                                    value="mcDonalds"
-                        >
-                                    mcDonalds
-                        </option>
-            </select>
-</label>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <h1>
-                 Welcome 
-                John Pope
-                !
-</h1>,
-              <h2>
-                Let's find your friends!
-</h2>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  " Welcome ",
-                  "John Pope",
-                  "!",
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                " Welcome ",
-                "John Pope",
-                "!",
-              ],
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Let's find your friends!",
-              },
-              "ref": null,
-              "rendered": "Let's find your friends!",
-              "type": "h2",
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "friends": Array [
-              Object {
-                "avatar": "https://placekitten.com/g/35/35",
-                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "lat": 32.796421,
-                "lng": -79.9312164,
-                "name": "Jim",
-              },
-              Object {
-                "avatar": "https://placekitten.com/g/35/36",
-                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "lat": 32.795421,
-                "lng": -79.9412164,
-                "name": "James",
-              },
-              Object {
-                "avatar": "https://placekitten.com/g/35/34",
-                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "lat": 32.794421,
-                "lng": -79.9612164,
-                "name": "Jenny",
-              },
-            ],
-            "toggleDetails": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "+ Add a Friend",
-            "className": "button",
-            "onClick": undefined,
-          },
-          "ref": null,
-          "rendered": "+ Add a Friend",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "isOpened": false,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Select Branding Theme:",
-              <select
-                onChange={[Function]}
->
-                <option
-                                value="blue"
-                >
-                                blue
-                </option>
-                <option
-                                value="CofC"
-                >
-                                CofC
-                </option>
-                <option
-                                value="green"
-                >
-                                green
-                </option>
-                <option
-                                value="mcDonalds"
-                >
-                                mcDonalds
-                </option>
-</select>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Select Branding Theme:",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <option
-                    value="blue"
->
-                    blue
-</option>,
-                  <option
-                    value="CofC"
->
-                    CofC
-</option>,
-                  <option
-                    value="green"
->
-                    green
-</option>,
-                  <option
-                    value="mcDonalds"
->
-                    mcDonalds
-</option>,
-                ],
-                "onChange": [Function],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "blue",
-                    "value": "blue",
-                  },
-                  "ref": null,
-                  "rendered": "blue",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "CofC",
-                    "value": "CofC",
-                  },
-                  "ref": null,
-                  "rendered": "CofC",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "green",
-                    "value": "green",
-                  },
-                  "ref": null,
-                  "rendered": "green",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "mcDonalds",
-                    "value": "mcDonalds",
-                  },
-                  "ref": null,
-                  "rendered": "mcDonalds",
-                  "type": "option",
-                },
-              ],
-              "type": "select",
-            },
-          ],
-          "type": "label",
-        },
-      ],
-      "type": Symbol(react.fragment),
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Unknown>
+        "children": <glamorous(div)>
+          <glamorous(label)>
+                    Select Branding Theme:
+                    <select
+                              onChange={[Function]}
+                    >
+                              <option
+                                        value="blue"
+                              >
+                                        blue
+                              </option>
+                              <option
+                                        value="CofC"
+                              >
+                                        CofC
+                              </option>
+                              <option
+                                        value="green"
+                              >
+                                        green
+                              </option>
+                              <option
+                                        value="mcDonalds"
+                              >
+                                        mcDonalds
+                              </option>
+                    </select>
+          </glamorous(label)>
           <glamorous(div)>
                     <h1>
                                Welcome 
                               John Pope
                               !
                     </h1>
-                    <h2>
-                              Let's find your friends!
-                    </h2>
+                    <p>
+                              Click on the markers below to view information about each friend, or add new friends below!
+                    </p>
           </glamorous(div)>
           <Connect(withProps(withScriptjs(withGoogleMap(Map))))
                     friends={
@@ -528,56 +237,51 @@ ShallowWrapper {
           <Connect(AddFriendForm)
                     isOpened={false}
           />
-          <label>
-                    Select Branding Theme:
-                    <select
-                              onChange={[Function]}
-                    >
-                              <option
-                                        value="blue"
-                              >
-                                        blue
-                              </option>
-                              <option
-                                        value="CofC"
-                              >
-                                        CofC
-                              </option>
-                              <option
-                                        value="green"
-                              >
-                                        green
-                              </option>
-                              <option
-                                        value="mcDonalds"
-                              >
-                                        mcDonalds
-                              </option>
-                    </select>
-          </label>
-</Unknown>,
-        "theme": Object {
-          "fontFamilyH1": "bebas",
-          "primaryDark": "#326ada",
-          "primaryLight": "#d4d8d4",
-        },
+</glamorous(div)>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
+            <glamorous(label)>
+              Select Branding Theme:
+              <select
+                            onChange={[Function]}
+              >
+                            <option
+                                          value="blue"
+                            >
+                                          blue
+                            </option>
+                            <option
+                                          value="CofC"
+                            >
+                                          CofC
+                            </option>
+                            <option
+                                          value="green"
+                            >
+                                          green
+                            </option>
+                            <option
+                                          value="mcDonalds"
+                            >
+                                          mcDonalds
+                            </option>
+              </select>
+</glamorous(label)>,
             <glamorous(div)>
               <h1>
                              Welcome 
                             John Pope
                             !
               </h1>
-              <h2>
-                            Let's find your friends!
-              </h2>
+              <p>
+                            Click on the markers below to view information about each friend, or add new friends below!
+              </p>
 </glamorous(div)>,
             <Connect(withProps(withScriptjs(withGoogleMap(Map))))
               friends={
@@ -616,33 +320,6 @@ ShallowWrapper {
             <Connect(AddFriendForm)
               isOpened={false}
 />,
-            <label>
-              Select Branding Theme:
-              <select
-                            onChange={[Function]}
-              >
-                            <option
-                                          value="blue"
-                            >
-                                          blue
-                            </option>
-                            <option
-                                          value="CofC"
-                            >
-                                          CofC
-                            </option>
-                            <option
-                                          value="green"
-                            >
-                                          green
-                            </option>
-                            <option
-                                          value="mcDonalds"
-                            >
-                                          mcDonalds
-                            </option>
-              </select>
-</label>,
           ],
         },
         "ref": null,
@@ -651,115 +328,6 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <h1>
-                   Welcome 
-                  John Pope
-                  !
-</h1>,
-                <h2>
-                  Let's find your friends!
-</h2>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    " Welcome ",
-                    "John Pope",
-                    "!",
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  " Welcome ",
-                  "John Pope",
-                  "!",
-                ],
-                "type": "h1",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Let's find your friends!",
-                },
-                "ref": null,
-                "rendered": "Let's find your friends!",
-                "type": "h2",
-              },
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "friends": Array [
-                Object {
-                  "avatar": "https://placekitten.com/g/35/35",
-                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  "lat": 32.796421,
-                  "lng": -79.9312164,
-                  "name": "Jim",
-                },
-                Object {
-                  "avatar": "https://placekitten.com/g/35/36",
-                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  "lat": 32.795421,
-                  "lng": -79.9412164,
-                  "name": "James",
-                },
-                Object {
-                  "avatar": "https://placekitten.com/g/35/34",
-                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  "lat": 32.794421,
-                  "lng": -79.9612164,
-                  "name": "Jenny",
-                },
-              ],
-              "toggleDetails": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "+ Add a Friend",
-              "className": "button",
-              "onClick": undefined,
-            },
-            "ref": null,
-            "rendered": "+ Add a Friend",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "isOpened": false,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
             "props": Object {
               "children": Array [
                 "Select Branding Theme:",
@@ -875,10 +443,616 @@ ShallowWrapper {
                 "type": "select",
               },
             ],
-            "type": "label",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <h1>
+                   Welcome 
+                  John Pope
+                  !
+</h1>,
+                <p>
+                  Click on the markers below to view information about each friend, or add new friends below!
+</p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " Welcome ",
+                    "John Pope",
+                    "!",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " Welcome ",
+                  "John Pope",
+                  "!",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Click on the markers below to view information about each friend, or add new friends below!",
+                },
+                "ref": null,
+                "rendered": "Click on the markers below to view information about each friend, or add new friends below!",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "friends": Array [
+                Object {
+                  "avatar": "https://placekitten.com/g/35/35",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.796421,
+                  "lng": -79.9312164,
+                  "name": "Jim",
+                },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/36",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.795421,
+                  "lng": -79.9412164,
+                  "name": "James",
+                },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/34",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.794421,
+                  "lng": -79.9612164,
+                  "name": "Jenny",
+                },
+              ],
+              "toggleDetails": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "+ Add a Friend",
+              "className": "button",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": "+ Add a Friend",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "isOpened": false,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
           },
         ],
-        "type": Symbol(react.fragment),
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <glamorous(div)>
+          <glamorous(div)>
+                    <glamorous(label)>
+                              Select Branding Theme:
+                              <select
+                                        onChange={[Function]}
+                              >
+                                        <option
+                                                  value="blue"
+                                        >
+                                                  blue
+                                        </option>
+                                        <option
+                                                  value="CofC"
+                                        >
+                                                  CofC
+                                        </option>
+                                        <option
+                                                  value="green"
+                                        >
+                                                  green
+                                        </option>
+                                        <option
+                                                  value="mcDonalds"
+                                        >
+                                                  mcDonalds
+                                        </option>
+                              </select>
+                    </glamorous(label)>
+                    <glamorous(div)>
+                              <h1>
+                                         Welcome 
+                                        John Pope
+                                        !
+                              </h1>
+                              <p>
+                                        Click on the markers below to view information about each friend, or add new friends below!
+                              </p>
+                    </glamorous(div)>
+                    <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                              friends={
+                                        Array [
+                                                  Object {
+                                                    "avatar": "https://placekitten.com/g/35/35",
+                                                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                    "lat": 32.796421,
+                                                    "lng": -79.9312164,
+                                                    "name": "Jim",
+                                                  },
+                                                  Object {
+                                                    "avatar": "https://placekitten.com/g/35/36",
+                                                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                    "lat": 32.795421,
+                                                    "lng": -79.9412164,
+                                                    "name": "James",
+                                                  },
+                                                  Object {
+                                                    "avatar": "https://placekitten.com/g/35/34",
+                                                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                    "lat": 32.794421,
+                                                    "lng": -79.9612164,
+                                                    "name": "Jenny",
+                                                  },
+                                                ]
+                              }
+                              toggleDetails={undefined}
+                    />
+                    <glamorous(button)
+                              className="button"
+                              onClick={undefined}
+                    >
+                              + Add a Friend
+                    </glamorous(button)>
+                    <Connect(AddFriendForm)
+                              isOpened={false}
+                    />
+          </glamorous(div)>
+</glamorous(div)>,
+        "theme": Object {
+          "fontFamilyH1": "bebas",
+          "primaryDark": "#326ada",
+          "primaryLight": "#d4d8d4",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <glamorous(div)>
+            <glamorous(label)>
+                        Select Branding Theme:
+                        <select
+                                    onChange={[Function]}
+                        >
+                                    <option
+                                                value="blue"
+                                    >
+                                                blue
+                                    </option>
+                                    <option
+                                                value="CofC"
+                                    >
+                                                CofC
+                                    </option>
+                                    <option
+                                                value="green"
+                                    >
+                                                green
+                                    </option>
+                                    <option
+                                                value="mcDonalds"
+                                    >
+                                                mcDonalds
+                                    </option>
+                        </select>
+            </glamorous(label)>
+            <glamorous(div)>
+                        <h1>
+                                     Welcome 
+                                    John Pope
+                                    !
+                        </h1>
+                        <p>
+                                    Click on the markers below to view information about each friend, or add new friends below!
+                        </p>
+            </glamorous(div)>
+            <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                        friends={
+                                    Array [
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/35",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.796421,
+                                                  "lng": -79.9312164,
+                                                  "name": "Jim",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/36",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.795421,
+                                                  "lng": -79.9412164,
+                                                  "name": "James",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/34",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.794421,
+                                                  "lng": -79.9612164,
+                                                  "name": "Jenny",
+                                                },
+                                              ]
+                        }
+                        toggleDetails={undefined}
+            />
+            <glamorous(button)
+                        className="button"
+                        onClick={undefined}
+            >
+                        + Add a Friend
+            </glamorous(button)>
+            <Connect(AddFriendForm)
+                        isOpened={false}
+            />
+</glamorous(div)>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <glamorous(label)>
+                Select Branding Theme:
+                <select
+                                onChange={[Function]}
+                >
+                                <option
+                                                value="blue"
+                                >
+                                                blue
+                                </option>
+                                <option
+                                                value="CofC"
+                                >
+                                                CofC
+                                </option>
+                                <option
+                                                value="green"
+                                >
+                                                green
+                                </option>
+                                <option
+                                                value="mcDonalds"
+                                >
+                                                mcDonalds
+                                </option>
+                </select>
+</glamorous(label)>,
+              <glamorous(div)>
+                <h1>
+                                 Welcome 
+                                John Pope
+                                !
+                </h1>
+                <p>
+                                Click on the markers below to view information about each friend, or add new friends below!
+                </p>
+</glamorous(div)>,
+              <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                friends={
+                                Array [
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/35",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.796421,
+                                                  "lng": -79.9312164,
+                                                  "name": "Jim",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/36",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.795421,
+                                                  "lng": -79.9412164,
+                                                  "name": "James",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/34",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.794421,
+                                                  "lng": -79.9612164,
+                                                  "name": "Jenny",
+                                                },
+                                              ]
+                }
+                toggleDetails={undefined}
+/>,
+              <glamorous(button)
+                className="button"
+                onClick={undefined}
+>
+                + Add a Friend
+</glamorous(button)>,
+              <Connect(AddFriendForm)
+                isOpened={false}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "Select Branding Theme:",
+                  <select
+                    onChange={[Function]}
+>
+                    <option
+                                        value="blue"
+                    >
+                                        blue
+                    </option>
+                    <option
+                                        value="CofC"
+                    >
+                                        CofC
+                    </option>
+                    <option
+                                        value="green"
+                    >
+                                        green
+                    </option>
+                    <option
+                                        value="mcDonalds"
+                    >
+                                        mcDonalds
+                    </option>
+</select>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Select Branding Theme:",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option
+                        value="blue"
+>
+                        blue
+</option>,
+                      <option
+                        value="CofC"
+>
+                        CofC
+</option>,
+                      <option
+                        value="green"
+>
+                        green
+</option>,
+                      <option
+                        value="mcDonalds"
+>
+                        mcDonalds
+</option>,
+                    ],
+                    "onChange": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "blue",
+                        "value": "blue",
+                      },
+                      "ref": null,
+                      "rendered": "blue",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "CofC",
+                        "value": "CofC",
+                      },
+                      "ref": null,
+                      "rendered": "CofC",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "green",
+                        "value": "green",
+                      },
+                      "ref": null,
+                      "rendered": "green",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "mcDonalds",
+                        "value": "mcDonalds",
+                      },
+                      "ref": null,
+                      "rendered": "mcDonalds",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <h1>
+                     Welcome 
+                    John Pope
+                    !
+</h1>,
+                  <p>
+                    Click on the markers below to view information about each friend, or add new friends below!
+</p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " Welcome ",
+                      "John Pope",
+                      "!",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " Welcome ",
+                    "John Pope",
+                    "!",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Click on the markers below to view information about each friend, or add new friends below!",
+                  },
+                  "ref": null,
+                  "rendered": "Click on the markers below to view information about each friend, or add new friends below!",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "friends": Array [
+                  Object {
+                    "avatar": "https://placekitten.com/g/35/35",
+                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "lat": 32.796421,
+                    "lng": -79.9312164,
+                    "name": "Jim",
+                  },
+                  Object {
+                    "avatar": "https://placekitten.com/g/35/36",
+                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "lat": 32.795421,
+                    "lng": -79.9412164,
+                    "name": "James",
+                  },
+                  Object {
+                    "avatar": "https://placekitten.com/g/35/34",
+                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "lat": 32.794421,
+                    "lng": -79.9612164,
+                    "name": "Jenny",
+                  },
+                ],
+                "toggleDetails": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "+ Add a Friend",
+                "className": "button",
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": "+ Add a Friend",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "isOpened": false,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
       },
       "type": [Function],
     },
@@ -965,76 +1139,78 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Unknown>
+      "children": <glamorous(div)>
         <glamorous(div)>
-                <h1>
-                         Welcome 
-                        John Pope
-                        !
-                </h1>
-                <h2>
-                        Let's find your friends!
-                </h2>
+                <glamorous(label)>
+                        Select Branding Theme:
+                        <select
+                                onChange={[Function]}
+                        >
+                                <option
+                                        value="blue"
+                                >
+                                        blue
+                                </option>
+                                <option
+                                        value="CofC"
+                                >
+                                        CofC
+                                </option>
+                                <option
+                                        value="green"
+                                >
+                                        green
+                                </option>
+                                <option
+                                        value="mcDonalds"
+                                >
+                                        mcDonalds
+                                </option>
+                        </select>
+                </glamorous(label)>
+                <glamorous(div)>
+                        <h1>
+                                 Welcome 
+                                John Pope
+                                !
+                        </h1>
+                        <p>
+                                Click on the markers below to view information about each friend, or add new friends below!
+                        </p>
+                </glamorous(div)>
+                <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                        friends={
+                                Array [
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/35",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.796421,
+                                          "lng": -79.9312164,
+                                          "name": "Jim",
+                                        },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/36",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.795421,
+                                          "lng": -79.9412164,
+                                          "name": "James",
+                                        },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/34",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.794421,
+                                          "lng": -79.9612164,
+                                          "name": "Jenny",
+                                        },
+                                      ]
+                        }
+                        toggleDetails={undefined}
+                />
+                <Connect(AddFriendForm)
+                        isOpened={true}
+                />
         </glamorous(div)>
-        <Connect(withProps(withScriptjs(withGoogleMap(Map))))
-                friends={
-                        Array [
-                                Object {
-                                  "avatar": "https://placekitten.com/g/35/35",
-                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                  "lat": 32.796421,
-                                  "lng": -79.9312164,
-                                  "name": "Jim",
-                                },
-                                Object {
-                                  "avatar": "https://placekitten.com/g/35/36",
-                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                  "lat": 32.795421,
-                                  "lng": -79.9412164,
-                                  "name": "James",
-                                },
-                                Object {
-                                  "avatar": "https://placekitten.com/g/35/34",
-                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                  "lat": 32.794421,
-                                  "lng": -79.9612164,
-                                  "name": "Jenny",
-                                },
-                              ]
-                }
-                toggleDetails={undefined}
-        />
-        <Connect(AddFriendForm)
-                isOpened={true}
-        />
-        <label>
-                Select Branding Theme:
-                <select
-                        onChange={[Function]}
-                >
-                        <option
-                                value="blue"
-                        >
-                                blue
-                        </option>
-                        <option
-                                value="CofC"
-                        >
-                                CofC
-                        </option>
-                        <option
-                                value="green"
-                        >
-                                green
-                        </option>
-                        <option
-                                value="mcDonalds"
-                        >
-                                mcDonalds
-                        </option>
-                </select>
-        </label>
-</Unknown>,
+</glamorous(div)>,
       "theme": Object {
         "fontFamilyH1": "bebas",
         "primaryDark": "#326ada",
@@ -1045,321 +1221,45 @@ ShallowWrapper {
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <glamorous(div)>
-            <h1>
-                         Welcome 
-                        John Pope
-                        !
-            </h1>
-            <h2>
-                        Let's find your friends!
-            </h2>
-</glamorous(div)>,
-          <Connect(withProps(withScriptjs(withGoogleMap(Map))))
-            friends={
-                        Array [
-                                    Object {
-                                      "avatar": "https://placekitten.com/g/35/35",
-                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                      "lat": 32.796421,
-                                      "lng": -79.9312164,
-                                      "name": "Jim",
-                                    },
-                                    Object {
-                                      "avatar": "https://placekitten.com/g/35/36",
-                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                      "lat": 32.795421,
-                                      "lng": -79.9412164,
-                                      "name": "James",
-                                    },
-                                    Object {
-                                      "avatar": "https://placekitten.com/g/35/34",
-                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                      "lat": 32.794421,
-                                      "lng": -79.9612164,
-                                      "name": "Jenny",
-                                    },
-                                  ]
-            }
-            toggleDetails={undefined}
-/>,
-          false,
-          <Connect(AddFriendForm)
-            isOpened={true}
-/>,
-          <label>
-            Select Branding Theme:
-            <select
-                        onChange={[Function]}
-            >
-                        <option
-                                    value="blue"
-                        >
-                                    blue
-                        </option>
-                        <option
-                                    value="CofC"
-                        >
-                                    CofC
-                        </option>
-                        <option
-                                    value="green"
-                        >
-                                    green
-                        </option>
-                        <option
-                                    value="mcDonalds"
-                        >
-                                    mcDonalds
-                        </option>
-            </select>
-</label>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <h1>
-                 Welcome 
-                John Pope
-                !
-</h1>,
-              <h2>
-                Let's find your friends!
-</h2>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  " Welcome ",
-                  "John Pope",
-                  "!",
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                " Welcome ",
-                "John Pope",
-                "!",
-              ],
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Let's find your friends!",
-              },
-              "ref": null,
-              "rendered": "Let's find your friends!",
-              "type": "h2",
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "friends": Array [
-              Object {
-                "avatar": "https://placekitten.com/g/35/35",
-                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "lat": 32.796421,
-                "lng": -79.9312164,
-                "name": "Jim",
-              },
-              Object {
-                "avatar": "https://placekitten.com/g/35/36",
-                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "lat": 32.795421,
-                "lng": -79.9412164,
-                "name": "James",
-              },
-              Object {
-                "avatar": "https://placekitten.com/g/35/34",
-                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "lat": 32.794421,
-                "lng": -79.9612164,
-                "name": "Jenny",
-              },
-            ],
-            "toggleDetails": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        false,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "isOpened": true,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Select Branding Theme:",
-              <select
-                onChange={[Function]}
->
-                <option
-                                value="blue"
-                >
-                                blue
-                </option>
-                <option
-                                value="CofC"
-                >
-                                CofC
-                </option>
-                <option
-                                value="green"
-                >
-                                green
-                </option>
-                <option
-                                value="mcDonalds"
-                >
-                                mcDonalds
-                </option>
-</select>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Select Branding Theme:",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <option
-                    value="blue"
->
-                    blue
-</option>,
-                  <option
-                    value="CofC"
->
-                    CofC
-</option>,
-                  <option
-                    value="green"
->
-                    green
-</option>,
-                  <option
-                    value="mcDonalds"
->
-                    mcDonalds
-</option>,
-                ],
-                "onChange": [Function],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "blue",
-                    "value": "blue",
-                  },
-                  "ref": null,
-                  "rendered": "blue",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "CofC",
-                    "value": "CofC",
-                  },
-                  "ref": null,
-                  "rendered": "CofC",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "green",
-                    "value": "green",
-                  },
-                  "ref": null,
-                  "rendered": "green",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "mcDonalds",
-                    "value": "mcDonalds",
-                  },
-                  "ref": null,
-                  "rendered": "mcDonalds",
-                  "type": "option",
-                },
-              ],
-              "type": "select",
-            },
-          ],
-          "type": "label",
-        },
-      ],
-      "type": Symbol(react.fragment),
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Unknown>
+        "children": <glamorous(div)>
+          <glamorous(label)>
+                    Select Branding Theme:
+                    <select
+                              onChange={[Function]}
+                    >
+                              <option
+                                        value="blue"
+                              >
+                                        blue
+                              </option>
+                              <option
+                                        value="CofC"
+                              >
+                                        CofC
+                              </option>
+                              <option
+                                        value="green"
+                              >
+                                        green
+                              </option>
+                              <option
+                                        value="mcDonalds"
+                              >
+                                        mcDonalds
+                              </option>
+                    </select>
+          </glamorous(label)>
           <glamorous(div)>
                     <h1>
                                Welcome 
                               John Pope
                               !
                     </h1>
-                    <h2>
-                              Let's find your friends!
-                    </h2>
+                    <p>
+                              Click on the markers below to view information about each friend, or add new friends below!
+                    </p>
           </glamorous(div)>
           <Connect(withProps(withScriptjs(withGoogleMap(Map))))
                     friends={
@@ -1392,56 +1292,51 @@ ShallowWrapper {
           <Connect(AddFriendForm)
                     isOpened={true}
           />
-          <label>
-                    Select Branding Theme:
-                    <select
-                              onChange={[Function]}
-                    >
-                              <option
-                                        value="blue"
-                              >
-                                        blue
-                              </option>
-                              <option
-                                        value="CofC"
-                              >
-                                        CofC
-                              </option>
-                              <option
-                                        value="green"
-                              >
-                                        green
-                              </option>
-                              <option
-                                        value="mcDonalds"
-                              >
-                                        mcDonalds
-                              </option>
-                    </select>
-          </label>
-</Unknown>,
-        "theme": Object {
-          "fontFamilyH1": "bebas",
-          "primaryDark": "#326ada",
-          "primaryLight": "#d4d8d4",
-        },
+</glamorous(div)>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
+            <glamorous(label)>
+              Select Branding Theme:
+              <select
+                            onChange={[Function]}
+              >
+                            <option
+                                          value="blue"
+                            >
+                                          blue
+                            </option>
+                            <option
+                                          value="CofC"
+                            >
+                                          CofC
+                            </option>
+                            <option
+                                          value="green"
+                            >
+                                          green
+                            </option>
+                            <option
+                                          value="mcDonalds"
+                            >
+                                          mcDonalds
+                            </option>
+              </select>
+</glamorous(label)>,
             <glamorous(div)>
               <h1>
                              Welcome 
                             John Pope
                             !
               </h1>
-              <h2>
-                            Let's find your friends!
-              </h2>
+              <p>
+                            Click on the markers below to view information about each friend, or add new friends below!
+              </p>
 </glamorous(div)>,
             <Connect(withProps(withScriptjs(withGoogleMap(Map))))
               friends={
@@ -1475,33 +1370,6 @@ ShallowWrapper {
             <Connect(AddFriendForm)
               isOpened={true}
 />,
-            <label>
-              Select Branding Theme:
-              <select
-                            onChange={[Function]}
-              >
-                            <option
-                                          value="blue"
-                            >
-                                          blue
-                            </option>
-                            <option
-                                          value="CofC"
-                            >
-                                          CofC
-                            </option>
-                            <option
-                                          value="green"
-                            >
-                                          green
-                            </option>
-                            <option
-                                          value="mcDonalds"
-                            >
-                                          mcDonalds
-                            </option>
-              </select>
-</label>,
           ],
         },
         "ref": null,
@@ -1510,103 +1378,6 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <h1>
-                   Welcome 
-                  John Pope
-                  !
-</h1>,
-                <h2>
-                  Let's find your friends!
-</h2>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    " Welcome ",
-                    "John Pope",
-                    "!",
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  " Welcome ",
-                  "John Pope",
-                  "!",
-                ],
-                "type": "h1",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Let's find your friends!",
-                },
-                "ref": null,
-                "rendered": "Let's find your friends!",
-                "type": "h2",
-              },
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "friends": Array [
-                Object {
-                  "avatar": "https://placekitten.com/g/35/35",
-                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  "lat": 32.796421,
-                  "lng": -79.9312164,
-                  "name": "Jim",
-                },
-                Object {
-                  "avatar": "https://placekitten.com/g/35/36",
-                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  "lat": 32.795421,
-                  "lng": -79.9412164,
-                  "name": "James",
-                },
-                Object {
-                  "avatar": "https://placekitten.com/g/35/34",
-                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  "lat": 32.794421,
-                  "lng": -79.9612164,
-                  "name": "Jenny",
-                },
-              ],
-              "toggleDetails": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          false,
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "isOpened": true,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
             "props": Object {
               "children": Array [
                 "Select Branding Theme:",
@@ -1722,10 +1493,575 @@ ShallowWrapper {
                 "type": "select",
               },
             ],
-            "type": "label",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <h1>
+                   Welcome 
+                  John Pope
+                  !
+</h1>,
+                <p>
+                  Click on the markers below to view information about each friend, or add new friends below!
+</p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " Welcome ",
+                    "John Pope",
+                    "!",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " Welcome ",
+                  "John Pope",
+                  "!",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Click on the markers below to view information about each friend, or add new friends below!",
+                },
+                "ref": null,
+                "rendered": "Click on the markers below to view information about each friend, or add new friends below!",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "friends": Array [
+                Object {
+                  "avatar": "https://placekitten.com/g/35/35",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.796421,
+                  "lng": -79.9312164,
+                  "name": "Jim",
+                },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/36",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.795421,
+                  "lng": -79.9412164,
+                  "name": "James",
+                },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/34",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.794421,
+                  "lng": -79.9612164,
+                  "name": "Jenny",
+                },
+              ],
+              "toggleDetails": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "isOpened": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
           },
         ],
-        "type": Symbol(react.fragment),
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <glamorous(div)>
+          <glamorous(div)>
+                    <glamorous(label)>
+                              Select Branding Theme:
+                              <select
+                                        onChange={[Function]}
+                              >
+                                        <option
+                                                  value="blue"
+                                        >
+                                                  blue
+                                        </option>
+                                        <option
+                                                  value="CofC"
+                                        >
+                                                  CofC
+                                        </option>
+                                        <option
+                                                  value="green"
+                                        >
+                                                  green
+                                        </option>
+                                        <option
+                                                  value="mcDonalds"
+                                        >
+                                                  mcDonalds
+                                        </option>
+                              </select>
+                    </glamorous(label)>
+                    <glamorous(div)>
+                              <h1>
+                                         Welcome 
+                                        John Pope
+                                        !
+                              </h1>
+                              <p>
+                                        Click on the markers below to view information about each friend, or add new friends below!
+                              </p>
+                    </glamorous(div)>
+                    <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                              friends={
+                                        Array [
+                                                  Object {
+                                                    "avatar": "https://placekitten.com/g/35/35",
+                                                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                    "lat": 32.796421,
+                                                    "lng": -79.9312164,
+                                                    "name": "Jim",
+                                                  },
+                                                  Object {
+                                                    "avatar": "https://placekitten.com/g/35/36",
+                                                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                    "lat": 32.795421,
+                                                    "lng": -79.9412164,
+                                                    "name": "James",
+                                                  },
+                                                  Object {
+                                                    "avatar": "https://placekitten.com/g/35/34",
+                                                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                    "lat": 32.794421,
+                                                    "lng": -79.9612164,
+                                                    "name": "Jenny",
+                                                  },
+                                                ]
+                              }
+                              toggleDetails={undefined}
+                    />
+                    <Connect(AddFriendForm)
+                              isOpened={true}
+                    />
+          </glamorous(div)>
+</glamorous(div)>,
+        "theme": Object {
+          "fontFamilyH1": "bebas",
+          "primaryDark": "#326ada",
+          "primaryLight": "#d4d8d4",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <glamorous(div)>
+            <glamorous(label)>
+                        Select Branding Theme:
+                        <select
+                                    onChange={[Function]}
+                        >
+                                    <option
+                                                value="blue"
+                                    >
+                                                blue
+                                    </option>
+                                    <option
+                                                value="CofC"
+                                    >
+                                                CofC
+                                    </option>
+                                    <option
+                                                value="green"
+                                    >
+                                                green
+                                    </option>
+                                    <option
+                                                value="mcDonalds"
+                                    >
+                                                mcDonalds
+                                    </option>
+                        </select>
+            </glamorous(label)>
+            <glamorous(div)>
+                        <h1>
+                                     Welcome 
+                                    John Pope
+                                    !
+                        </h1>
+                        <p>
+                                    Click on the markers below to view information about each friend, or add new friends below!
+                        </p>
+            </glamorous(div)>
+            <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                        friends={
+                                    Array [
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/35",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.796421,
+                                                  "lng": -79.9312164,
+                                                  "name": "Jim",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/36",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.795421,
+                                                  "lng": -79.9412164,
+                                                  "name": "James",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/34",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.794421,
+                                                  "lng": -79.9612164,
+                                                  "name": "Jenny",
+                                                },
+                                              ]
+                        }
+                        toggleDetails={undefined}
+            />
+            <Connect(AddFriendForm)
+                        isOpened={true}
+            />
+</glamorous(div)>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <glamorous(label)>
+                Select Branding Theme:
+                <select
+                                onChange={[Function]}
+                >
+                                <option
+                                                value="blue"
+                                >
+                                                blue
+                                </option>
+                                <option
+                                                value="CofC"
+                                >
+                                                CofC
+                                </option>
+                                <option
+                                                value="green"
+                                >
+                                                green
+                                </option>
+                                <option
+                                                value="mcDonalds"
+                                >
+                                                mcDonalds
+                                </option>
+                </select>
+</glamorous(label)>,
+              <glamorous(div)>
+                <h1>
+                                 Welcome 
+                                John Pope
+                                !
+                </h1>
+                <p>
+                                Click on the markers below to view information about each friend, or add new friends below!
+                </p>
+</glamorous(div)>,
+              <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                friends={
+                                Array [
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/35",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.796421,
+                                                  "lng": -79.9312164,
+                                                  "name": "Jim",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/36",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.795421,
+                                                  "lng": -79.9412164,
+                                                  "name": "James",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/34",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.794421,
+                                                  "lng": -79.9612164,
+                                                  "name": "Jenny",
+                                                },
+                                              ]
+                }
+                toggleDetails={undefined}
+/>,
+              false,
+              <Connect(AddFriendForm)
+                isOpened={true}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "Select Branding Theme:",
+                  <select
+                    onChange={[Function]}
+>
+                    <option
+                                        value="blue"
+                    >
+                                        blue
+                    </option>
+                    <option
+                                        value="CofC"
+                    >
+                                        CofC
+                    </option>
+                    <option
+                                        value="green"
+                    >
+                                        green
+                    </option>
+                    <option
+                                        value="mcDonalds"
+                    >
+                                        mcDonalds
+                    </option>
+</select>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Select Branding Theme:",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option
+                        value="blue"
+>
+                        blue
+</option>,
+                      <option
+                        value="CofC"
+>
+                        CofC
+</option>,
+                      <option
+                        value="green"
+>
+                        green
+</option>,
+                      <option
+                        value="mcDonalds"
+>
+                        mcDonalds
+</option>,
+                    ],
+                    "onChange": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "blue",
+                        "value": "blue",
+                      },
+                      "ref": null,
+                      "rendered": "blue",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "CofC",
+                        "value": "CofC",
+                      },
+                      "ref": null,
+                      "rendered": "CofC",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "green",
+                        "value": "green",
+                      },
+                      "ref": null,
+                      "rendered": "green",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "mcDonalds",
+                        "value": "mcDonalds",
+                      },
+                      "ref": null,
+                      "rendered": "mcDonalds",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <h1>
+                     Welcome 
+                    John Pope
+                    !
+</h1>,
+                  <p>
+                    Click on the markers below to view information about each friend, or add new friends below!
+</p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " Welcome ",
+                      "John Pope",
+                      "!",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " Welcome ",
+                    "John Pope",
+                    "!",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Click on the markers below to view information about each friend, or add new friends below!",
+                  },
+                  "ref": null,
+                  "rendered": "Click on the markers below to view information about each friend, or add new friends below!",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "friends": Array [
+                  Object {
+                    "avatar": "https://placekitten.com/g/35/35",
+                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "lat": 32.796421,
+                    "lng": -79.9312164,
+                    "name": "Jim",
+                  },
+                  Object {
+                    "avatar": "https://placekitten.com/g/35/36",
+                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "lat": 32.795421,
+                    "lng": -79.9412164,
+                    "name": "James",
+                  },
+                  Object {
+                    "avatar": "https://placekitten.com/g/35/34",
+                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "lat": 32.794421,
+                    "lng": -79.9612164,
+                    "name": "Jenny",
+                  },
+                ],
+                "toggleDetails": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "isOpened": true,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
       },
       "type": [Function],
     },
@@ -1813,82 +2149,84 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Unknown>
+      "children": <glamorous(div)>
         <glamorous(div)>
-                <h1>
-                         Welcome 
-                        John Pope
-                        !
-                </h1>
-                <h2>
-                        Let's find your friends!
-                </h2>
-        </glamorous(div)>
-        <Connect(withProps(withScriptjs(withGoogleMap(Map))))
-                friends={
-                        Array [
-                                Object {
-                                  "avatar": "https://placekitten.com/g/35/35",
-                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                  "lat": 32.796421,
-                                  "lng": -79.9312164,
-                                  "name": "Jim",
-                                },
-                                Object {
-                                  "avatar": "https://placekitten.com/g/35/36",
-                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                  "lat": 32.795421,
-                                  "lng": -79.9412164,
-                                  "name": "James",
-                                },
-                                Object {
-                                  "avatar": "https://placekitten.com/g/35/34",
-                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                  "lat": 32.794421,
-                                  "lng": -79.9612164,
-                                  "name": "Jenny",
-                                },
-                              ]
-                }
-                toggleDetails={undefined}
-        />
-        <glamorous(button)
-                className="button"
-                onClick={[Function]}
-        >
-                + Add a Friend
-        </glamorous(button)>
-        <Connect(AddFriendForm)
-                isOpened={false}
-        />
-        <label>
-                Select Branding Theme:
-                <select
-                        onChange={[Function]}
+                <glamorous(label)>
+                        Select Branding Theme:
+                        <select
+                                onChange={[Function]}
+                        >
+                                <option
+                                        value="blue"
+                                >
+                                        blue
+                                </option>
+                                <option
+                                        value="CofC"
+                                >
+                                        CofC
+                                </option>
+                                <option
+                                        value="green"
+                                >
+                                        green
+                                </option>
+                                <option
+                                        value="mcDonalds"
+                                >
+                                        mcDonalds
+                                </option>
+                        </select>
+                </glamorous(label)>
+                <glamorous(div)>
+                        <h1>
+                                 Welcome 
+                                John Pope
+                                !
+                        </h1>
+                        <p>
+                                Click on the markers below to view information about each friend, or add new friends below!
+                        </p>
+                </glamorous(div)>
+                <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                        friends={
+                                Array [
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/35",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.796421,
+                                          "lng": -79.9312164,
+                                          "name": "Jim",
+                                        },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/36",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.795421,
+                                          "lng": -79.9412164,
+                                          "name": "James",
+                                        },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/34",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.794421,
+                                          "lng": -79.9612164,
+                                          "name": "Jenny",
+                                        },
+                                      ]
+                        }
+                        toggleDetails={undefined}
+                />
+                <glamorous(button)
+                        className="button"
+                        onClick={[Function]}
                 >
-                        <option
-                                value="blue"
-                        >
-                                blue
-                        </option>
-                        <option
-                                value="CofC"
-                        >
-                                CofC
-                        </option>
-                        <option
-                                value="green"
-                        >
-                                green
-                        </option>
-                        <option
-                                value="mcDonalds"
-                        >
-                                mcDonalds
-                        </option>
-                </select>
-        </label>
-</Unknown>,
+                        + Add a Friend
+                </glamorous(button)>
+                <Connect(AddFriendForm)
+                        isOpened={false}
+                />
+        </glamorous(div)>
+</glamorous(div)>,
       "theme": Object {
         "fontFamilyH1": "bebas",
         "primaryDark": "#326ada",
@@ -1899,338 +2237,45 @@ ShallowWrapper {
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <glamorous(div)>
-            <h1>
-                         Welcome 
-                        John Pope
-                        !
-            </h1>
-            <h2>
-                        Let's find your friends!
-            </h2>
-</glamorous(div)>,
-          <Connect(withProps(withScriptjs(withGoogleMap(Map))))
-            friends={
-                        Array [
-                                    Object {
-                                      "avatar": "https://placekitten.com/g/35/35",
-                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                      "lat": 32.796421,
-                                      "lng": -79.9312164,
-                                      "name": "Jim",
-                                    },
-                                    Object {
-                                      "avatar": "https://placekitten.com/g/35/36",
-                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                      "lat": 32.795421,
-                                      "lng": -79.9412164,
-                                      "name": "James",
-                                    },
-                                    Object {
-                                      "avatar": "https://placekitten.com/g/35/34",
-                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                      "lat": 32.794421,
-                                      "lng": -79.9612164,
-                                      "name": "Jenny",
-                                    },
-                                  ]
-            }
-            toggleDetails={undefined}
-/>,
-          <glamorous(button)
-            className="button"
-            onClick={[Function]}
->
-            + Add a Friend
-</glamorous(button)>,
-          <Connect(AddFriendForm)
-            isOpened={false}
-/>,
-          <label>
-            Select Branding Theme:
-            <select
-                        onChange={[Function]}
-            >
-                        <option
-                                    value="blue"
-                        >
-                                    blue
-                        </option>
-                        <option
-                                    value="CofC"
-                        >
-                                    CofC
-                        </option>
-                        <option
-                                    value="green"
-                        >
-                                    green
-                        </option>
-                        <option
-                                    value="mcDonalds"
-                        >
-                                    mcDonalds
-                        </option>
-            </select>
-</label>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <h1>
-                 Welcome 
-                John Pope
-                !
-</h1>,
-              <h2>
-                Let's find your friends!
-</h2>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  " Welcome ",
-                  "John Pope",
-                  "!",
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                " Welcome ",
-                "John Pope",
-                "!",
-              ],
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Let's find your friends!",
-              },
-              "ref": null,
-              "rendered": "Let's find your friends!",
-              "type": "h2",
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "friends": Array [
-              Object {
-                "avatar": "https://placekitten.com/g/35/35",
-                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "lat": 32.796421,
-                "lng": -79.9312164,
-                "name": "Jim",
-              },
-              Object {
-                "avatar": "https://placekitten.com/g/35/36",
-                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "lat": 32.795421,
-                "lng": -79.9412164,
-                "name": "James",
-              },
-              Object {
-                "avatar": "https://placekitten.com/g/35/34",
-                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "lat": 32.794421,
-                "lng": -79.9612164,
-                "name": "Jenny",
-              },
-            ],
-            "toggleDetails": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "+ Add a Friend",
-            "className": "button",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": "+ Add a Friend",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "isOpened": false,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Select Branding Theme:",
-              <select
-                onChange={[Function]}
->
-                <option
-                                value="blue"
-                >
-                                blue
-                </option>
-                <option
-                                value="CofC"
-                >
-                                CofC
-                </option>
-                <option
-                                value="green"
-                >
-                                green
-                </option>
-                <option
-                                value="mcDonalds"
-                >
-                                mcDonalds
-                </option>
-</select>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Select Branding Theme:",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <option
-                    value="blue"
->
-                    blue
-</option>,
-                  <option
-                    value="CofC"
->
-                    CofC
-</option>,
-                  <option
-                    value="green"
->
-                    green
-</option>,
-                  <option
-                    value="mcDonalds"
->
-                    mcDonalds
-</option>,
-                ],
-                "onChange": [Function],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "blue",
-                    "value": "blue",
-                  },
-                  "ref": null,
-                  "rendered": "blue",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "CofC",
-                    "value": "CofC",
-                  },
-                  "ref": null,
-                  "rendered": "CofC",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "green",
-                    "value": "green",
-                  },
-                  "ref": null,
-                  "rendered": "green",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "mcDonalds",
-                    "value": "mcDonalds",
-                  },
-                  "ref": null,
-                  "rendered": "mcDonalds",
-                  "type": "option",
-                },
-              ],
-              "type": "select",
-            },
-          ],
-          "type": "label",
-        },
-      ],
-      "type": Symbol(react.fragment),
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Unknown>
+        "children": <glamorous(div)>
+          <glamorous(label)>
+                    Select Branding Theme:
+                    <select
+                              onChange={[Function]}
+                    >
+                              <option
+                                        value="blue"
+                              >
+                                        blue
+                              </option>
+                              <option
+                                        value="CofC"
+                              >
+                                        CofC
+                              </option>
+                              <option
+                                        value="green"
+                              >
+                                        green
+                              </option>
+                              <option
+                                        value="mcDonalds"
+                              >
+                                        mcDonalds
+                              </option>
+                    </select>
+          </glamorous(label)>
           <glamorous(div)>
                     <h1>
                                Welcome 
                               John Pope
                               !
                     </h1>
-                    <h2>
-                              Let's find your friends!
-                    </h2>
+                    <p>
+                              Click on the markers below to view information about each friend, or add new friends below!
+                    </p>
           </glamorous(div)>
           <Connect(withProps(withScriptjs(withGoogleMap(Map))))
                     friends={
@@ -2269,56 +2314,51 @@ ShallowWrapper {
           <Connect(AddFriendForm)
                     isOpened={false}
           />
-          <label>
-                    Select Branding Theme:
-                    <select
-                              onChange={[Function]}
-                    >
-                              <option
-                                        value="blue"
-                              >
-                                        blue
-                              </option>
-                              <option
-                                        value="CofC"
-                              >
-                                        CofC
-                              </option>
-                              <option
-                                        value="green"
-                              >
-                                        green
-                              </option>
-                              <option
-                                        value="mcDonalds"
-                              >
-                                        mcDonalds
-                              </option>
-                    </select>
-          </label>
-</Unknown>,
-        "theme": Object {
-          "fontFamilyH1": "bebas",
-          "primaryDark": "#326ada",
-          "primaryLight": "#d4d8d4",
-        },
+</glamorous(div)>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
+            <glamorous(label)>
+              Select Branding Theme:
+              <select
+                            onChange={[Function]}
+              >
+                            <option
+                                          value="blue"
+                            >
+                                          blue
+                            </option>
+                            <option
+                                          value="CofC"
+                            >
+                                          CofC
+                            </option>
+                            <option
+                                          value="green"
+                            >
+                                          green
+                            </option>
+                            <option
+                                          value="mcDonalds"
+                            >
+                                          mcDonalds
+                            </option>
+              </select>
+</glamorous(label)>,
             <glamorous(div)>
               <h1>
                              Welcome 
                             John Pope
                             !
               </h1>
-              <h2>
-                            Let's find your friends!
-              </h2>
+              <p>
+                            Click on the markers below to view information about each friend, or add new friends below!
+              </p>
 </glamorous(div)>,
             <Connect(withProps(withScriptjs(withGoogleMap(Map))))
               friends={
@@ -2357,33 +2397,6 @@ ShallowWrapper {
             <Connect(AddFriendForm)
               isOpened={false}
 />,
-            <label>
-              Select Branding Theme:
-              <select
-                            onChange={[Function]}
-              >
-                            <option
-                                          value="blue"
-                            >
-                                          blue
-                            </option>
-                            <option
-                                          value="CofC"
-                            >
-                                          CofC
-                            </option>
-                            <option
-                                          value="green"
-                            >
-                                          green
-                            </option>
-                            <option
-                                          value="mcDonalds"
-                            >
-                                          mcDonalds
-                            </option>
-              </select>
-</label>,
           ],
         },
         "ref": null,
@@ -2392,115 +2405,6 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <h1>
-                   Welcome 
-                  John Pope
-                  !
-</h1>,
-                <h2>
-                  Let's find your friends!
-</h2>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    " Welcome ",
-                    "John Pope",
-                    "!",
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  " Welcome ",
-                  "John Pope",
-                  "!",
-                ],
-                "type": "h1",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Let's find your friends!",
-                },
-                "ref": null,
-                "rendered": "Let's find your friends!",
-                "type": "h2",
-              },
-            ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "friends": Array [
-                Object {
-                  "avatar": "https://placekitten.com/g/35/35",
-                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  "lat": 32.796421,
-                  "lng": -79.9312164,
-                  "name": "Jim",
-                },
-                Object {
-                  "avatar": "https://placekitten.com/g/35/36",
-                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  "lat": 32.795421,
-                  "lng": -79.9412164,
-                  "name": "James",
-                },
-                Object {
-                  "avatar": "https://placekitten.com/g/35/34",
-                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  "lat": 32.794421,
-                  "lng": -79.9612164,
-                  "name": "Jenny",
-                },
-              ],
-              "toggleDetails": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "+ Add a Friend",
-              "className": "button",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "+ Add a Friend",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "isOpened": false,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
             "props": Object {
               "children": Array [
                 "Select Branding Theme:",
@@ -2616,10 +2520,616 @@ ShallowWrapper {
                 "type": "select",
               },
             ],
-            "type": "label",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <h1>
+                   Welcome 
+                  John Pope
+                  !
+</h1>,
+                <p>
+                  Click on the markers below to view information about each friend, or add new friends below!
+</p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " Welcome ",
+                    "John Pope",
+                    "!",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " Welcome ",
+                  "John Pope",
+                  "!",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Click on the markers below to view information about each friend, or add new friends below!",
+                },
+                "ref": null,
+                "rendered": "Click on the markers below to view information about each friend, or add new friends below!",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "friends": Array [
+                Object {
+                  "avatar": "https://placekitten.com/g/35/35",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.796421,
+                  "lng": -79.9312164,
+                  "name": "Jim",
+                },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/36",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.795421,
+                  "lng": -79.9412164,
+                  "name": "James",
+                },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/34",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.794421,
+                  "lng": -79.9612164,
+                  "name": "Jenny",
+                },
+              ],
+              "toggleDetails": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "+ Add a Friend",
+              "className": "button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "+ Add a Friend",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "isOpened": false,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
           },
         ],
-        "type": Symbol(react.fragment),
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <glamorous(div)>
+          <glamorous(div)>
+                    <glamorous(label)>
+                              Select Branding Theme:
+                              <select
+                                        onChange={[Function]}
+                              >
+                                        <option
+                                                  value="blue"
+                                        >
+                                                  blue
+                                        </option>
+                                        <option
+                                                  value="CofC"
+                                        >
+                                                  CofC
+                                        </option>
+                                        <option
+                                                  value="green"
+                                        >
+                                                  green
+                                        </option>
+                                        <option
+                                                  value="mcDonalds"
+                                        >
+                                                  mcDonalds
+                                        </option>
+                              </select>
+                    </glamorous(label)>
+                    <glamorous(div)>
+                              <h1>
+                                         Welcome 
+                                        John Pope
+                                        !
+                              </h1>
+                              <p>
+                                        Click on the markers below to view information about each friend, or add new friends below!
+                              </p>
+                    </glamorous(div)>
+                    <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                              friends={
+                                        Array [
+                                                  Object {
+                                                    "avatar": "https://placekitten.com/g/35/35",
+                                                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                    "lat": 32.796421,
+                                                    "lng": -79.9312164,
+                                                    "name": "Jim",
+                                                  },
+                                                  Object {
+                                                    "avatar": "https://placekitten.com/g/35/36",
+                                                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                    "lat": 32.795421,
+                                                    "lng": -79.9412164,
+                                                    "name": "James",
+                                                  },
+                                                  Object {
+                                                    "avatar": "https://placekitten.com/g/35/34",
+                                                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                    "lat": 32.794421,
+                                                    "lng": -79.9612164,
+                                                    "name": "Jenny",
+                                                  },
+                                                ]
+                              }
+                              toggleDetails={undefined}
+                    />
+                    <glamorous(button)
+                              className="button"
+                              onClick={[Function]}
+                    >
+                              + Add a Friend
+                    </glamorous(button)>
+                    <Connect(AddFriendForm)
+                              isOpened={false}
+                    />
+          </glamorous(div)>
+</glamorous(div)>,
+        "theme": Object {
+          "fontFamilyH1": "bebas",
+          "primaryDark": "#326ada",
+          "primaryLight": "#d4d8d4",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <glamorous(div)>
+            <glamorous(label)>
+                        Select Branding Theme:
+                        <select
+                                    onChange={[Function]}
+                        >
+                                    <option
+                                                value="blue"
+                                    >
+                                                blue
+                                    </option>
+                                    <option
+                                                value="CofC"
+                                    >
+                                                CofC
+                                    </option>
+                                    <option
+                                                value="green"
+                                    >
+                                                green
+                                    </option>
+                                    <option
+                                                value="mcDonalds"
+                                    >
+                                                mcDonalds
+                                    </option>
+                        </select>
+            </glamorous(label)>
+            <glamorous(div)>
+                        <h1>
+                                     Welcome 
+                                    John Pope
+                                    !
+                        </h1>
+                        <p>
+                                    Click on the markers below to view information about each friend, or add new friends below!
+                        </p>
+            </glamorous(div)>
+            <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                        friends={
+                                    Array [
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/35",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.796421,
+                                                  "lng": -79.9312164,
+                                                  "name": "Jim",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/36",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.795421,
+                                                  "lng": -79.9412164,
+                                                  "name": "James",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/34",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.794421,
+                                                  "lng": -79.9612164,
+                                                  "name": "Jenny",
+                                                },
+                                              ]
+                        }
+                        toggleDetails={undefined}
+            />
+            <glamorous(button)
+                        className="button"
+                        onClick={[Function]}
+            >
+                        + Add a Friend
+            </glamorous(button)>
+            <Connect(AddFriendForm)
+                        isOpened={false}
+            />
+</glamorous(div)>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <glamorous(label)>
+                Select Branding Theme:
+                <select
+                                onChange={[Function]}
+                >
+                                <option
+                                                value="blue"
+                                >
+                                                blue
+                                </option>
+                                <option
+                                                value="CofC"
+                                >
+                                                CofC
+                                </option>
+                                <option
+                                                value="green"
+                                >
+                                                green
+                                </option>
+                                <option
+                                                value="mcDonalds"
+                                >
+                                                mcDonalds
+                                </option>
+                </select>
+</glamorous(label)>,
+              <glamorous(div)>
+                <h1>
+                                 Welcome 
+                                John Pope
+                                !
+                </h1>
+                <p>
+                                Click on the markers below to view information about each friend, or add new friends below!
+                </p>
+</glamorous(div)>,
+              <Connect(withProps(withScriptjs(withGoogleMap(Map))))
+                friends={
+                                Array [
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/35",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.796421,
+                                                  "lng": -79.9312164,
+                                                  "name": "Jim",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/36",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.795421,
+                                                  "lng": -79.9412164,
+                                                  "name": "James",
+                                                },
+                                                Object {
+                                                  "avatar": "https://placekitten.com/g/35/34",
+                                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                                  "lat": 32.794421,
+                                                  "lng": -79.9612164,
+                                                  "name": "Jenny",
+                                                },
+                                              ]
+                }
+                toggleDetails={undefined}
+/>,
+              <glamorous(button)
+                className="button"
+                onClick={[Function]}
+>
+                + Add a Friend
+</glamorous(button)>,
+              <Connect(AddFriendForm)
+                isOpened={false}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "Select Branding Theme:",
+                  <select
+                    onChange={[Function]}
+>
+                    <option
+                                        value="blue"
+                    >
+                                        blue
+                    </option>
+                    <option
+                                        value="CofC"
+                    >
+                                        CofC
+                    </option>
+                    <option
+                                        value="green"
+                    >
+                                        green
+                    </option>
+                    <option
+                                        value="mcDonalds"
+                    >
+                                        mcDonalds
+                    </option>
+</select>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Select Branding Theme:",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <option
+                        value="blue"
+>
+                        blue
+</option>,
+                      <option
+                        value="CofC"
+>
+                        CofC
+</option>,
+                      <option
+                        value="green"
+>
+                        green
+</option>,
+                      <option
+                        value="mcDonalds"
+>
+                        mcDonalds
+</option>,
+                    ],
+                    "onChange": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "blue",
+                        "value": "blue",
+                      },
+                      "ref": null,
+                      "rendered": "blue",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "CofC",
+                        "value": "CofC",
+                      },
+                      "ref": null,
+                      "rendered": "CofC",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "green",
+                        "value": "green",
+                      },
+                      "ref": null,
+                      "rendered": "green",
+                      "type": "option",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "mcDonalds",
+                        "value": "mcDonalds",
+                      },
+                      "ref": null,
+                      "rendered": "mcDonalds",
+                      "type": "option",
+                    },
+                  ],
+                  "type": "select",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <h1>
+                     Welcome 
+                    John Pope
+                    !
+</h1>,
+                  <p>
+                    Click on the markers below to view information about each friend, or add new friends below!
+</p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " Welcome ",
+                      "John Pope",
+                      "!",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " Welcome ",
+                    "John Pope",
+                    "!",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Click on the markers below to view information about each friend, or add new friends below!",
+                  },
+                  "ref": null,
+                  "rendered": "Click on the markers below to view information about each friend, or add new friends below!",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "friends": Array [
+                  Object {
+                    "avatar": "https://placekitten.com/g/35/35",
+                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "lat": 32.796421,
+                    "lng": -79.9312164,
+                    "name": "Jim",
+                  },
+                  Object {
+                    "avatar": "https://placekitten.com/g/35/36",
+                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "lat": 32.795421,
+                    "lng": -79.9412164,
+                    "name": "James",
+                  },
+                  Object {
+                    "avatar": "https://placekitten.com/g/35/34",
+                    "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "lat": 32.794421,
+                    "lng": -79.9612164,
+                    "name": "Jenny",
+                  },
+                ],
+                "toggleDetails": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "+ Add a Friend",
+                "className": "button",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "+ Add a Friend",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "isOpened": false,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
       },
       "type": [Function],
     },

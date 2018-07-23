@@ -44,7 +44,8 @@ ShallowWrapper {
                 Fill in the information below
         </legend>
         <glamorous(form)>
-                Name:
+                name
+                :
                 <input
                         name="name"
                         onChange={[Function]}
@@ -52,7 +53,8 @@ ShallowWrapper {
                 />
         </glamorous(form)>
         <glamorous(form)>
-                Info:
+                info
+                :
                 <input
                         name="info"
                         onChange={[Function]}
@@ -60,7 +62,8 @@ ShallowWrapper {
                 />
         </glamorous(form)>
         <glamorous(form)>
-                Avatar:
+                avatar
+                :
                 <input
                         name="avatar"
                         onChange={[Function]}
@@ -97,30 +100,35 @@ ShallowWrapper {
           <legend>
             Fill in the information below
 </legend>,
-          <glamorous(form)>
-            Name:
-            <input
-                        name="name"
-                        onChange={[Function]}
-                        type="text"
-            />
+          Array [
+            <glamorous(form)>
+              name
+              :
+              <input
+                            name="name"
+                            onChange={[Function]}
+                            type="text"
+              />
 </glamorous(form)>,
-          <glamorous(form)>
-            Info:
-            <input
-                        name="info"
-                        onChange={[Function]}
-                        type="text"
-            />
+            <glamorous(form)>
+              info
+              :
+              <input
+                            name="info"
+                            onChange={[Function]}
+                            type="text"
+              />
 </glamorous(form)>,
-          <glamorous(form)>
-            Avatar:
-            <input
-                        name="avatar"
-                        onChange={[Function]}
-                        type="text"
-            />
+            <glamorous(form)>
+              avatar
+              :
+              <input
+                            name="avatar"
+                            onChange={[Function]}
+                            type="text"
+              />
 </glamorous(form)>,
+          ],
           <glamorous(button)
             className="button"
             onClick={[Function]}
@@ -152,7 +160,8 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              "Name:",
+              "name",
+              ":",
               <input
                 name="name"
                 onChange={[Function]}
@@ -162,7 +171,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Name:",
+            "name",
+            ":",
             Object {
               "instance": null,
               "key": undefined,
@@ -185,7 +195,8 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              "Info:",
+              "info",
+              ":",
               <input
                 name="info"
                 onChange={[Function]}
@@ -195,7 +206,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Info:",
+            "info",
+            ":",
             Object {
               "instance": null,
               "key": undefined,
@@ -218,7 +230,8 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              "Avatar:",
+              "avatar",
+              ":",
               <input
                 name="avatar"
                 onChange={[Function]}
@@ -228,7 +241,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Avatar:",
+            "avatar",
+            ":",
             Object {
               "instance": null,
               "key": undefined,
@@ -281,7 +295,8 @@ ShallowWrapper {
                     Fill in the information below
           </legend>
           <glamorous(form)>
-                    Name:
+                    name
+                    :
                     <input
                               name="name"
                               onChange={[Function]}
@@ -289,7 +304,8 @@ ShallowWrapper {
                     />
           </glamorous(form)>
           <glamorous(form)>
-                    Info:
+                    info
+                    :
                     <input
                               name="info"
                               onChange={[Function]}
@@ -297,7 +313,8 @@ ShallowWrapper {
                     />
           </glamorous(form)>
           <glamorous(form)>
-                    Avatar:
+                    avatar
+                    :
                     <input
                               name="avatar"
                               onChange={[Function]}
@@ -334,30 +351,35 @@ ShallowWrapper {
             <legend>
               Fill in the information below
 </legend>,
-            <glamorous(form)>
-              Name:
-              <input
-                            name="name"
-                            onChange={[Function]}
-                            type="text"
-              />
+            Array [
+              <glamorous(form)>
+                name
+                :
+                <input
+                                name="name"
+                                onChange={[Function]}
+                                type="text"
+                />
 </glamorous(form)>,
-            <glamorous(form)>
-              Info:
-              <input
-                            name="info"
-                            onChange={[Function]}
-                            type="text"
-              />
+              <glamorous(form)>
+                info
+                :
+                <input
+                                name="info"
+                                onChange={[Function]}
+                                type="text"
+                />
 </glamorous(form)>,
-            <glamorous(form)>
-              Avatar:
-              <input
-                            name="avatar"
-                            onChange={[Function]}
-                            type="text"
-              />
+              <glamorous(form)>
+                avatar
+                :
+                <input
+                                name="avatar"
+                                onChange={[Function]}
+                                type="text"
+                />
 </glamorous(form)>,
+            ],
             <glamorous(button)
               className="button"
               onClick={[Function]}
@@ -389,7 +411,8 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                "Name:",
+                "name",
+                ":",
                 <input
                   name="name"
                   onChange={[Function]}
@@ -399,7 +422,8 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
-              "Name:",
+              "name",
+              ":",
               Object {
                 "instance": null,
                 "key": undefined,
@@ -422,7 +446,8 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                "Info:",
+                "info",
+                ":",
                 <input
                   name="info"
                   onChange={[Function]}
@@ -432,7 +457,8 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
-              "Info:",
+              "info",
+              ":",
               Object {
                 "instance": null,
                 "key": undefined,
@@ -455,7 +481,8 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                "Avatar:",
+                "avatar",
+                ":",
                 <input
                   name="avatar"
                   onChange={[Function]}
@@ -465,7 +492,8 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
-              "Avatar:",
+              "avatar",
+              ":",
               Object {
                 "instance": null,
                 "key": undefined,
