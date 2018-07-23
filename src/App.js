@@ -9,15 +9,15 @@ import glamorous, { ThemeProvider } from "glamorous";
 
 const Header = glamorous.div(({ theme }) => ({
   displayName: "Header",
-  width: "100%",
   padding: "0.5rem 1rem",
   background: `${theme.primaryDark}`,
   " h1": {
     fontFamily: `${theme.fontFamilyH1}`,
     color: `${theme.primaryLight}`
   },
-  " h2": {
-    fontWeight: "normal"
+  " h2, p": {
+    fontWeight: "normal",
+    color: `${theme.primaryLight}`
   }
 }));
 
@@ -29,6 +29,28 @@ export const AddFriendButton = glamorous.button(({ theme }) => ({
   color: "#eee"
 }));
 
+const AppContainer = glamorous.div({
+  background: "#222",
+  width: "100%",
+  display: "flex",
+  alignItems: "center",
+  flexDirection: "column",
+  displayName: "AppContainer"
+});
+
+const Screen = glamorous.div({
+  maxWidth: "320px",
+  background: "#eee",
+  paddingBottom: "6rem"
+});
+
+const Label = glamorous.label({
+  width: "100%",
+  display: "inline-block",
+  padding: "0.5rem 0rem",
+  textAlign: "center"
+});
+
 export const App = ({
   user: { name, friends },
   toggleAddFriendForm,
@@ -39,28 +61,33 @@ export const App = ({
   toggleDetails
 }) => (
   <ThemeProvider theme={themes[theme]}>
-    <React.Fragment>
-      <Header>
-        <h1> Welcome {name && name}!</h1>
-        <h2>Let&apos;s find your friends!</h2>
-      </Header>
-      <Map friends={friends} toggleDetails={toggleDetails} />
-      {!showAddFriendForm && (
-        <AddFriendButton className="button" onClick={toggleAddFriendForm}>
-          + Add a Friend
-        </AddFriendButton>
-      )}
-      <AddFriendForm isOpened={showAddFriendForm} />
-      <label>
-        Select Branding Theme:
-        <select onChange={e => updateTheme(e.target.value)}>
-          <option value="blue">blue</option>
-          <option value="CofC">CofC</option>
-          <option value="green">green</option>
-          <option value="mcDonalds">mcDonalds</option>
-        </select>
-      </label>
-    </React.Fragment>
+    <AppContainer>
+      <Screen>
+        <Label>
+          Select Branding Theme:
+          <select onChange={e => updateTheme(e.target.value)}>
+            <option value="blue">blue</option>
+            <option value="CofC">CofC</option>
+            <option value="green">green</option>
+            <option value="mcDonalds">mcDonalds</option>
+          </select>
+        </Label>
+        <Header>
+          <h1> Welcome {name && name}!</h1>
+          <p>
+            Click on the markers below to view information about each friend, or
+            add new friends below!
+          </p>
+        </Header>
+        <Map friends={friends} toggleDetails={toggleDetails} />
+        {!showAddFriendForm && (
+          <AddFriendButton className="button" onClick={toggleAddFriendForm}>
+            + Add a Friend
+          </AddFriendButton>
+        )}
+        <AddFriendForm isOpened={showAddFriendForm} />
+      </Screen>
+    </AppContainer>
   </ThemeProvider>
 );
 

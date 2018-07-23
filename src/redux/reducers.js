@@ -9,7 +9,7 @@ const defaultState = {
           "https://img.buzzfeed.com/buzzfeed-static/static/campaign_images/webdr06/2013/4/19/11/28-ways-to-live-life-like-lucille-bluth-1-18801-1366385986-4_big.jpg",
         name: "Lucille",
         info:
-          "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Lorem ipsum dolor sit amet, deserunt mollit anim id est laborum.",
         lat: 32.796421,
         lng: -79.9312164
       },
@@ -18,7 +18,7 @@ const defaultState = {
           "https://vignette.wikia.nocookie.net/arresteddevelopment/images/f/f6/Season_4_Poster_-_George_Michael_Bluth_01.jpg/revision/latest?cb=20130521213443",
         name: "George Michael",
         info:
-          "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Lorem ipsum dolor sit amet, deserunt mollit anim id est laborum.",
         lat: 32.795421,
         lng: -79.9412164
       },
@@ -27,7 +27,7 @@ const defaultState = {
           "https://pbs.twimg.com/profile_images/83006069/gobbluth_400x400.jpg",
         name: "GOB Bluth",
         info:
-          "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Lorem ipsum dolor sit amet, deserunt mollit anim id est laborum.",
         lat: 32.794421,
         lng: -79.9612164
       }
@@ -72,11 +72,15 @@ const reducer = handleActions(
     }),
     ADD_FRIEND: (state, { payload }) => {
       let newFriends = state.user.friends.map(friend => friend);
-      newFriends.push({
+      const newFriend = {
         ...payload,
         lat: 32.785421,
         lng: -79.9412164
-      });
+      };
+      if (payload.avatar === "") {
+        newFriend.avatar = "http://placekitten.com/150/150";
+      }
+      newFriends.push(newFriend);
       return {
         ...state,
         user: {

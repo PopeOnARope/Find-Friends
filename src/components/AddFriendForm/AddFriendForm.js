@@ -16,7 +16,7 @@ const Label = glamorous.form({
 export class AddFriendForm extends React.Component {
   constructor() {
     super();
-    this.state = { name: "", avatar: "" };
+    this.state = { name: "", avatar: "", info: "" };
   }
 
   updateFormValues(target) {
@@ -28,36 +28,22 @@ export class AddFriendForm extends React.Component {
       <Collapse isOpened={showAddFriendForm}>
         <form name="Add a Friend" style={{ padding: "0.5rem" }}>
           <legend>Fill in the information below</legend>
-          <Label>
-            Name:
-            <input
-              name="name"
-              onChange={e => this.updateFormValues(e.target)}
-              type="text"
-            />
-          </Label>
-          <Label>
-            Info:
-            <input
-              name="info"
-              onChange={e => this.updateFormValues(e.target)}
-              type="text"
-            />
-          </Label>
-          <Label>
-            Avatar:
-            <input
-              name="avatar"
-              onChange={e => this.updateFormValues(e.target)}
-              type="text"
-            />
-          </Label>
+          {["name", "info", "avatar"].map(key => (
+            <Label>
+              {key}:
+              <input
+                name={key}
+                onChange={e => this.updateFormValues(e.target)}
+                type="text"
+              />
+            </Label>
+          ))}
           <AddFriendButton
             className="button"
             onClick={e => {
               e && e.preventDefault();
               addFriend(this.state);
-              this.setState({ name: "", avatar: "" });
+              this.setState({ name: "", avatar: "", info: "" });
             }}
           >
             + Add Friend
