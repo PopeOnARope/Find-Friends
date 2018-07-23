@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { shallow, mount, configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-import { App } from "./App";
+import { AddFriendForm } from "./AddFriendForm";
 
 configure({ adapter: new Adapter() });
 
@@ -21,22 +21,22 @@ const mockProps = {
   showAddFriendForm: false
 };
 
-it("renders without crashing", () => {
-  const wrapper = shallow(<App {...mockProps} />);
+it("Renders as expected", () => {
+  const wrapper = shallow(<AddFriendForm {...mockProps} />);
   expect(wrapper).toMatchSnapshot();
 });
 
-it("shows the add friend form", () => {
-  const wrapper = shallow(<App {...mockProps} showAddFriendForm={true} />);
-  expect(wrapper).toMatchSnapshot();
-});
-
-it("toggles the new friend form when the add friend button is clicked", () => {
+it("adds a new friend when the add friend button is clicked a second time", () => {
+  const addFriend = jest.fn();
   const toggleAddFriendForm = jest.fn();
   const wrapper = shallow(
-    <App {...mockProps} toggleAddFriendForm={toggleAddFriendForm} />
+    <AddFriendForm
+      {...mockProps}
+      showAddFriendForm={true}
+      toggleAddFriendForm={toggleAddFriendForm}
+      addFriend={addFriend}
+    />
   );
   wrapper.find(".button").simulate("click");
-  expect(toggleAddFriendForm).toHaveBeenCalled();
-  expect(wrapper).toMatchSnapshot();
+  expect(addFriend).toHaveBeenCalled();
 });

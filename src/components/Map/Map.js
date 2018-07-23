@@ -13,10 +13,10 @@ const Map = props => (
     defaultZoom={13}
     defaultCenter={{ lat: 32.797421, lng: -79.9412164 }}
   >
-    <Marker
-      position={{ lat: 32.797421, lng: -79.9412164 }}
-      icon="http://placekitten.com/50/50"
-    />
+    {props.friends &&
+      props.friends.map(({ name, lng, lat, avatar }) => (
+        <Marker position={{ lat, lng }} icon={avatar} />
+      ))}
   </GoogleMap>
 );
 

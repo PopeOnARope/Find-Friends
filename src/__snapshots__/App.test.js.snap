@@ -1,0 +1,1171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App
+    showAddFriendForm={false}
+    user={
+        Object {
+            "friends": Array [
+              Object {
+                "avatar": "https://placekitten.com/g/25/26",
+                "lat": 32.796421,
+                "lng": -79.9312164,
+                "name": "Jim",
+              },
+            ],
+            "name": "John Pope",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Unknown>
+        <glamorous(div)>
+                <h1>
+                         Welcome 
+                        John Pope
+                        !
+                </h1>
+                <h2>
+                        Lets find your friends!
+                </h2>
+        </glamorous(div)>
+        <withProps(withScriptjs(withGoogleMap(Map)))
+                friends={
+                        Array [
+                                Object {
+                                  "avatar": "https://placekitten.com/g/25/26",
+                                  "lat": 32.796421,
+                                  "lng": -79.9312164,
+                                  "name": "Jim",
+                                },
+                              ]
+                }
+        />
+        <glamorous(button)
+                className="button"
+                onClick={undefined}
+        >
+                Add a Friend
+        </glamorous(button)>
+        <Connect(AddFriendForm)
+                isOpened={null}
+        />
+</Unknown>,
+      "theme": Object {
+        "primaryDark": "#B18FCF",
+        "primaryLight": "#D8D8F6",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <glamorous(div)>
+            <h1>
+                         Welcome 
+                        John Pope
+                        !
+            </h1>
+            <h2>
+                        Lets find your friends!
+            </h2>
+</glamorous(div)>,
+          <withProps(withScriptjs(withGoogleMap(Map)))
+            friends={
+                        Array [
+                                    Object {
+                                      "avatar": "https://placekitten.com/g/25/26",
+                                      "lat": 32.796421,
+                                      "lng": -79.9312164,
+                                      "name": "Jim",
+                                    },
+                                  ]
+            }
+/>,
+          <glamorous(button)
+            className="button"
+            onClick={undefined}
+>
+            Add a Friend
+</glamorous(button)>,
+          <Connect(AddFriendForm)
+            isOpened={null}
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <h1>
+                 Welcome 
+                John Pope
+                !
+</h1>,
+              <h2>
+                Lets find your friends!
+</h2>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " Welcome ",
+                  "John Pope",
+                  "!",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " Welcome ",
+                "John Pope",
+                "!",
+              ],
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Lets find your friends!",
+              },
+              "ref": null,
+              "rendered": "Lets find your friends!",
+              "type": "h2",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "friends": Array [
+              Object {
+                "avatar": "https://placekitten.com/g/25/26",
+                "lat": 32.796421,
+                "lng": -79.9312164,
+                "name": "Jim",
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Add a Friend",
+            "className": "button",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": "Add a Friend",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpened": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Unknown>
+          <glamorous(div)>
+                    <h1>
+                               Welcome 
+                              John Pope
+                              !
+                    </h1>
+                    <h2>
+                              Lets find your friends!
+                    </h2>
+          </glamorous(div)>
+          <withProps(withScriptjs(withGoogleMap(Map)))
+                    friends={
+                              Array [
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/25/26",
+                                          "lat": 32.796421,
+                                          "lng": -79.9312164,
+                                          "name": "Jim",
+                                        },
+                                      ]
+                    }
+          />
+          <glamorous(button)
+                    className="button"
+                    onClick={undefined}
+          >
+                    Add a Friend
+          </glamorous(button)>
+          <Connect(AddFriendForm)
+                    isOpened={null}
+          />
+</Unknown>,
+        "theme": Object {
+          "primaryDark": "#B18FCF",
+          "primaryLight": "#D8D8F6",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <glamorous(div)>
+              <h1>
+                             Welcome 
+                            John Pope
+                            !
+              </h1>
+              <h2>
+                            Lets find your friends!
+              </h2>
+</glamorous(div)>,
+            <withProps(withScriptjs(withGoogleMap(Map)))
+              friends={
+                            Array [
+                                          Object {
+                                            "avatar": "https://placekitten.com/g/25/26",
+                                            "lat": 32.796421,
+                                            "lng": -79.9312164,
+                                            "name": "Jim",
+                                          },
+                                        ]
+              }
+/>,
+            <glamorous(button)
+              className="button"
+              onClick={undefined}
+>
+              Add a Friend
+</glamorous(button)>,
+            <Connect(AddFriendForm)
+              isOpened={null}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <h1>
+                   Welcome 
+                  John Pope
+                  !
+</h1>,
+                <h2>
+                  Lets find your friends!
+</h2>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " Welcome ",
+                    "John Pope",
+                    "!",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " Welcome ",
+                  "John Pope",
+                  "!",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Lets find your friends!",
+                },
+                "ref": null,
+                "rendered": "Lets find your friends!",
+                "type": "h2",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "friends": Array [
+                Object {
+                  "avatar": "https://placekitten.com/g/25/26",
+                  "lat": 32.796421,
+                  "lng": -79.9312164,
+                  "name": "Jim",
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Add a Friend",
+              "className": "button",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": "Add a Friend",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "isOpened": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`shows the add friend form 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App
+    showAddFriendForm={true}
+    user={
+        Object {
+            "friends": Array [
+              Object {
+                "avatar": "https://placekitten.com/g/25/26",
+                "lat": 32.796421,
+                "lng": -79.9312164,
+                "name": "Jim",
+              },
+            ],
+            "name": "John Pope",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Unknown>
+        <glamorous(div)>
+                <h1>
+                         Welcome 
+                        John Pope
+                        !
+                </h1>
+                <h2>
+                        Lets find your friends!
+                </h2>
+        </glamorous(div)>
+        <withProps(withScriptjs(withGoogleMap(Map)))
+                friends={
+                        Array [
+                                Object {
+                                  "avatar": "https://placekitten.com/g/25/26",
+                                  "lat": 32.796421,
+                                  "lng": -79.9312164,
+                                  "name": "Jim",
+                                },
+                              ]
+                }
+        />
+        <Connect(AddFriendForm)
+                isOpened={null}
+        />
+</Unknown>,
+      "theme": Object {
+        "primaryDark": "#B18FCF",
+        "primaryLight": "#D8D8F6",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <glamorous(div)>
+            <h1>
+                         Welcome 
+                        John Pope
+                        !
+            </h1>
+            <h2>
+                        Lets find your friends!
+            </h2>
+</glamorous(div)>,
+          <withProps(withScriptjs(withGoogleMap(Map)))
+            friends={
+                        Array [
+                                    Object {
+                                      "avatar": "https://placekitten.com/g/25/26",
+                                      "lat": 32.796421,
+                                      "lng": -79.9312164,
+                                      "name": "Jim",
+                                    },
+                                  ]
+            }
+/>,
+          false,
+          <Connect(AddFriendForm)
+            isOpened={null}
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <h1>
+                 Welcome 
+                John Pope
+                !
+</h1>,
+              <h2>
+                Lets find your friends!
+</h2>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " Welcome ",
+                  "John Pope",
+                  "!",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " Welcome ",
+                "John Pope",
+                "!",
+              ],
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Lets find your friends!",
+              },
+              "ref": null,
+              "rendered": "Lets find your friends!",
+              "type": "h2",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "friends": Array [
+              Object {
+                "avatar": "https://placekitten.com/g/25/26",
+                "lat": 32.796421,
+                "lng": -79.9312164,
+                "name": "Jim",
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpened": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Unknown>
+          <glamorous(div)>
+                    <h1>
+                               Welcome 
+                              John Pope
+                              !
+                    </h1>
+                    <h2>
+                              Lets find your friends!
+                    </h2>
+          </glamorous(div)>
+          <withProps(withScriptjs(withGoogleMap(Map)))
+                    friends={
+                              Array [
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/25/26",
+                                          "lat": 32.796421,
+                                          "lng": -79.9312164,
+                                          "name": "Jim",
+                                        },
+                                      ]
+                    }
+          />
+          <Connect(AddFriendForm)
+                    isOpened={null}
+          />
+</Unknown>,
+        "theme": Object {
+          "primaryDark": "#B18FCF",
+          "primaryLight": "#D8D8F6",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <glamorous(div)>
+              <h1>
+                             Welcome 
+                            John Pope
+                            !
+              </h1>
+              <h2>
+                            Lets find your friends!
+              </h2>
+</glamorous(div)>,
+            <withProps(withScriptjs(withGoogleMap(Map)))
+              friends={
+                            Array [
+                                          Object {
+                                            "avatar": "https://placekitten.com/g/25/26",
+                                            "lat": 32.796421,
+                                            "lng": -79.9312164,
+                                            "name": "Jim",
+                                          },
+                                        ]
+              }
+/>,
+            false,
+            <Connect(AddFriendForm)
+              isOpened={null}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <h1>
+                   Welcome 
+                  John Pope
+                  !
+</h1>,
+                <h2>
+                  Lets find your friends!
+</h2>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " Welcome ",
+                    "John Pope",
+                    "!",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " Welcome ",
+                  "John Pope",
+                  "!",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Lets find your friends!",
+                },
+                "ref": null,
+                "rendered": "Lets find your friends!",
+                "type": "h2",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "friends": Array [
+                Object {
+                  "avatar": "https://placekitten.com/g/25/26",
+                  "lat": 32.796421,
+                  "lng": -79.9312164,
+                  "name": "Jim",
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "isOpened": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`toggles the new friend form when the add friend button is clicked 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App
+    showAddFriendForm={false}
+    toggleAddFriendForm={[Function]}
+    user={
+        Object {
+            "friends": Array [
+              Object {
+                "avatar": "https://placekitten.com/g/25/26",
+                "lat": 32.796421,
+                "lng": -79.9312164,
+                "name": "Jim",
+              },
+            ],
+            "name": "John Pope",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Unknown>
+        <glamorous(div)>
+                <h1>
+                         Welcome 
+                        John Pope
+                        !
+                </h1>
+                <h2>
+                        Lets find your friends!
+                </h2>
+        </glamorous(div)>
+        <withProps(withScriptjs(withGoogleMap(Map)))
+                friends={
+                        Array [
+                                Object {
+                                  "avatar": "https://placekitten.com/g/25/26",
+                                  "lat": 32.796421,
+                                  "lng": -79.9312164,
+                                  "name": "Jim",
+                                },
+                              ]
+                }
+        />
+        <glamorous(button)
+                className="button"
+                onClick={[Function]}
+        >
+                Add a Friend
+        </glamorous(button)>
+        <Connect(AddFriendForm)
+                isOpened={null}
+        />
+</Unknown>,
+      "theme": Object {
+        "primaryDark": "#B18FCF",
+        "primaryLight": "#D8D8F6",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <glamorous(div)>
+            <h1>
+                         Welcome 
+                        John Pope
+                        !
+            </h1>
+            <h2>
+                        Lets find your friends!
+            </h2>
+</glamorous(div)>,
+          <withProps(withScriptjs(withGoogleMap(Map)))
+            friends={
+                        Array [
+                                    Object {
+                                      "avatar": "https://placekitten.com/g/25/26",
+                                      "lat": 32.796421,
+                                      "lng": -79.9312164,
+                                      "name": "Jim",
+                                    },
+                                  ]
+            }
+/>,
+          <glamorous(button)
+            className="button"
+            onClick={[Function]}
+>
+            Add a Friend
+</glamorous(button)>,
+          <Connect(AddFriendForm)
+            isOpened={null}
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <h1>
+                 Welcome 
+                John Pope
+                !
+</h1>,
+              <h2>
+                Lets find your friends!
+</h2>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " Welcome ",
+                  "John Pope",
+                  "!",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " Welcome ",
+                "John Pope",
+                "!",
+              ],
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Lets find your friends!",
+              },
+              "ref": null,
+              "rendered": "Lets find your friends!",
+              "type": "h2",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "friends": Array [
+              Object {
+                "avatar": "https://placekitten.com/g/25/26",
+                "lat": 32.796421,
+                "lng": -79.9312164,
+                "name": "Jim",
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Add a Friend",
+            "className": "button",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Add a Friend",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "isOpened": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Unknown>
+          <glamorous(div)>
+                    <h1>
+                               Welcome 
+                              John Pope
+                              !
+                    </h1>
+                    <h2>
+                              Lets find your friends!
+                    </h2>
+          </glamorous(div)>
+          <withProps(withScriptjs(withGoogleMap(Map)))
+                    friends={
+                              Array [
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/25/26",
+                                          "lat": 32.796421,
+                                          "lng": -79.9312164,
+                                          "name": "Jim",
+                                        },
+                                      ]
+                    }
+          />
+          <glamorous(button)
+                    className="button"
+                    onClick={[Function]}
+          >
+                    Add a Friend
+          </glamorous(button)>
+          <Connect(AddFriendForm)
+                    isOpened={null}
+          />
+</Unknown>,
+        "theme": Object {
+          "primaryDark": "#B18FCF",
+          "primaryLight": "#D8D8F6",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <glamorous(div)>
+              <h1>
+                             Welcome 
+                            John Pope
+                            !
+              </h1>
+              <h2>
+                            Lets find your friends!
+              </h2>
+</glamorous(div)>,
+            <withProps(withScriptjs(withGoogleMap(Map)))
+              friends={
+                            Array [
+                                          Object {
+                                            "avatar": "https://placekitten.com/g/25/26",
+                                            "lat": 32.796421,
+                                            "lng": -79.9312164,
+                                            "name": "Jim",
+                                          },
+                                        ]
+              }
+/>,
+            <glamorous(button)
+              className="button"
+              onClick={[Function]}
+>
+              Add a Friend
+</glamorous(button)>,
+            <Connect(AddFriendForm)
+              isOpened={null}
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <h1>
+                   Welcome 
+                  John Pope
+                  !
+</h1>,
+                <h2>
+                  Lets find your friends!
+</h2>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " Welcome ",
+                    "John Pope",
+                    "!",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " Welcome ",
+                  "John Pope",
+                  "!",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Lets find your friends!",
+                },
+                "ref": null,
+                "rendered": "Lets find your friends!",
+                "type": "h2",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "friends": Array [
+                Object {
+                  "avatar": "https://placekitten.com/g/25/26",
+                  "lat": 32.796421,
+                  "lng": -79.9312164,
+                  "name": "Jim",
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Add a Friend",
+              "className": "button",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Add a Friend",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "isOpened": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
