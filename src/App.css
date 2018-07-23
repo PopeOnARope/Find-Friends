@@ -2,3 +2,8 @@
   font-family: bebas;
   src: url(./assets/BEBAS.ttf);
 }
+
+@font-face {
+  font-family: Lobster;
+  src: url(./assets/Lobster_1.3.otf);
+}

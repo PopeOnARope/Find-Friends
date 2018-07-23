@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { toggleAddFriendForm } from "./redux/reducers";
+import { toggleAddFriendForm, updateTheme } from "./redux/reducers";
 import Map from "./components/Map/Map";
 import AddFriendForm from "./components/AddFriendForm/AddFriendForm";
 import "./App.css";
 
 import glamorous, { ThemeProvider } from "glamorous";
 
-const theme = {
-  primaryLight: "#D8D8F6",
-  primaryDark: "#B18FCF"
-};
+// const theme = {
+//   primaryLight: "#D8D8F6",
+//   primaryDark: "#B18FCF"
+// };
 
 const Header = glamorous.div(({ theme }) => ({
   displayName: "Header",
@@ -18,7 +18,7 @@ const Header = glamorous.div(({ theme }) => ({
   padding: "0.5rem 1rem",
   background: `${theme.primaryLight}`,
   " h1": {
-    fontFamily: "bebas",
+    fontFamily: `${theme.fontFamilyH1}`,
     color: `${theme.primaryDark}`
   },
   " h2": {
@@ -39,14 +39,18 @@ export class App extends React.Component {
     const {
       user: { name, friends },
       toggleAddFriendForm,
-      showAddFriendForm
+      showAddFriendForm,
+      updateTheme,
+      theme,
+      themes
     } = this.props;
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={themes[theme]}>
         <React.Fragment>
           <Header>
             <h1> Welcome {name && name}!</h1>
             <h2>Lets find your friends!</h2>
+            <button onClick={updateTheme} />
           </Header>
           <Map friends={friends} />
           {!showAddFriendForm && (
@@ -66,5 +70,5 @@ export default connect(
     console.log(state);
     return state;
   },
-  { toggleAddFriendForm }
+  { toggleAddFriendForm, updateTheme }
 )(App);

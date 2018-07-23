@@ -24,11 +24,25 @@ const defaultState = {
       }
     ]
   },
-  showAddFriendForm: false
+  showAddFriendForm: false,
+  themes: {
+    purple: {
+      primaryLight: "#D8D8F6",
+      primaryDark: "#B18FCF",
+      fontFamilyH1: "bebas"
+    },
+    autumn: {
+      primaryLight: "#753742",
+      primaryDark: "#AA5042",
+      fontFamilyH1: "Lobster"
+    }
+  },
+  theme: "purple"
 };
 
 export const toggleAddFriendForm = createAction("TOGGLE_ADD_FRIEND_FORM");
 export const addFriend = createAction("ADD_FRIEND");
+export const updateTheme = createAction("UPDATE_THEME");
 
 const reducer = handleActions(
   {
@@ -50,6 +64,12 @@ const reducer = handleActions(
           friends: newFriends
         },
         showAddFriendForm: false
+      };
+    },
+    UPDATE_THEME: (state, { payload }) => {
+      return {
+        ...state,
+        theme: state.theme === "purple" ? "autumn" : "purple"
       };
     }
   },
