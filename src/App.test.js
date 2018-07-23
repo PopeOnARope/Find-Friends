@@ -11,14 +11,55 @@ const mockProps = {
     name: "John Pope",
     friends: [
       {
-        avatar: "https://placekitten.com/g/25/26",
+        avatar: "https://placekitten.com/g/35/35",
         name: "Jim",
+        info:
+          "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         lat: 32.796421,
         lng: -79.9312164
+      },
+      {
+        avatar: "https://placekitten.com/g/35/36",
+        name: "James",
+        info:
+          "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        lat: 32.795421,
+        lng: -79.9412164
+      },
+      {
+        avatar: "https://placekitten.com/g/35/34",
+        name: "Jenny",
+        info:
+          "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        lat: 32.794421,
+        lng: -79.9612164
       }
     ]
   },
-  showAddFriendForm: false
+  showAddFriendForm: false,
+  themes: {
+    blue: {
+      primaryLight: "#d4d8d4",
+      primaryDark: "#326ada",
+      fontFamilyH1: "bebas"
+    },
+    CofC: {
+      primaryDark: "#660000",
+      primaryLight: "#eee",
+      fontFamilyH1: "Lobster"
+    },
+    mcDonalds: {
+      primaryDark: "#E84855",
+      primaryLight: "#FFFD82",
+      fontFamilyH1: "roboto"
+    },
+    green: {
+      primaryDark: "#28965A",
+      primaryLight: "#7CFEF0",
+      fontFamilyH1: "Georgia"
+    }
+  },
+  theme: "blue"
 };
 
 it("renders without crashing", () => {

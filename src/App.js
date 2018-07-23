@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { toggleAddFriendForm, updateTheme } from "./redux/reducers";
 import Map from "./components/Map/Map";
@@ -7,19 +7,14 @@ import "./App.css";
 
 import glamorous, { ThemeProvider } from "glamorous";
 
-// const theme = {
-//   primaryLight: "#D8D8F6",
-//   primaryDark: "#B18FCF"
-// };
-
 const Header = glamorous.div(({ theme }) => ({
   displayName: "Header",
   width: "100%",
   padding: "0.5rem 1rem",
-  background: `${theme.primaryLight}`,
+  background: `${theme.primaryDark}`,
   " h1": {
     fontFamily: `${theme.fontFamilyH1}`,
-    color: `${theme.primaryDark}`
+    color: `${theme.primaryLight}`
   },
   " h2": {
     fontWeight: "normal"
@@ -34,41 +29,41 @@ export const AddFriendButton = glamorous.button(({ theme }) => ({
   color: "#eee"
 }));
 
-export class App extends React.Component {
-  render() {
-    const {
-      user: { name, friends },
-      toggleAddFriendForm,
-      showAddFriendForm,
-      updateTheme,
-      theme,
-      themes
-    } = this.props;
-    return (
-      <ThemeProvider theme={themes[theme]}>
-        <React.Fragment>
-          <Header>
-            <h1> Welcome {name && name}!</h1>
-            <h2>Lets find your friends!</h2>
-            <button onClick={updateTheme} />
-          </Header>
-          <Map friends={friends} />
-          {!showAddFriendForm && (
-            <AddFriendButton className="button" onClick={toggleAddFriendForm}>
-              Add a Friend
-            </AddFriendButton>
-          )}
-          <AddFriendForm isOpened={this.state && showAddFriendForm} />
-        </React.Fragment>
-      </ThemeProvider>
-    );
-  }
-}
+export const App = ({
+  user: { name, friends },
+  toggleAddFriendForm,
+  showAddFriendForm,
+  updateTheme,
+  theme,
+  themes,
+  toggleDetails
+}) => (
+  <ThemeProvider theme={themes[theme]}>
+    <React.Fragment>
+      <Header>
+        <h1> Welcome {name && name}!</h1>
+        <h2>Let&apos;s find your friends!</h2>
+      </Header>
+      <Map friends={friends} toggleDetails={toggleDetails} />
+      {!showAddFriendForm && (
+        <AddFriendButton className="button" onClick={toggleAddFriendForm}>
+          + Add a Friend
+        </AddFriendButton>
+      )}
+      <AddFriendForm isOpened={showAddFriendForm} />
+      <label>
+        Select Branding Theme:
+        <select onChange={e => updateTheme(e.target.value)}>
+          <option value="blue">blue</option>
+          <option value="CofC">CofC</option>
+          <option value="green">green</option>
+          <option value="mcDonalds">mcDonalds</option>
+        </select>
+      </label>
+    </React.Fragment>
+  </ThemeProvider>
+);
 
-export default connect(
-  state => {
-    console.log(state);
-    return state;
-  },
-  { toggleAddFriendForm, updateTheme }
-)(App);
+export default connect(state => state, { toggleAddFriendForm, updateTheme })(
+  App
+);

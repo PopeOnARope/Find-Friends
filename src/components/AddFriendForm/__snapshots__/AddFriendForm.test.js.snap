@@ -52,6 +52,14 @@ ShallowWrapper {
                 />
         </glamorous(form)>
         <glamorous(form)>
+                Info:
+                <input
+                        name="info"
+                        onChange={[Function]}
+                        type="text"
+                />
+        </glamorous(form)>
+        <glamorous(form)>
                 Avatar:
                 <input
                         name="avatar"
@@ -63,7 +71,7 @@ ShallowWrapper {
                 className="button"
                 onClick={[Function]}
         >
-                Add Friend
+                + Add Friend
         </glamorous(button)>
 </form>,
       "fixedHeight": -1,
@@ -98,6 +106,14 @@ ShallowWrapper {
             />
 </glamorous(form)>,
           <glamorous(form)>
+            Info:
+            <input
+                        name="info"
+                        onChange={[Function]}
+                        type="text"
+            />
+</glamorous(form)>,
+          <glamorous(form)>
             Avatar:
             <input
                         name="avatar"
@@ -109,7 +125,7 @@ ShallowWrapper {
             className="button"
             onClick={[Function]}
 >
-            Add Friend
+            + Add Friend
 </glamorous(button)>,
         ],
         "name": "Add a Friend",
@@ -169,6 +185,39 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              "Info:",
+              <input
+                name="info"
+                onChange={[Function]}
+                type="text"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Info:",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "info",
+                "onChange": [Function],
+                "type": "text",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
               "Avatar:",
               <input
                 name="avatar"
@@ -201,12 +250,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Add Friend",
+            "children": "+ Add Friend",
             "className": "button",
             "onClick": [Function],
           },
           "ref": null,
-          "rendered": "Add Friend",
+          "rendered": "+ Add Friend",
           "type": [Function],
         },
       ],
@@ -240,6 +289,14 @@ ShallowWrapper {
                     />
           </glamorous(form)>
           <glamorous(form)>
+                    Info:
+                    <input
+                              name="info"
+                              onChange={[Function]}
+                              type="text"
+                    />
+          </glamorous(form)>
+          <glamorous(form)>
                     Avatar:
                     <input
                               name="avatar"
@@ -251,7 +308,7 @@ ShallowWrapper {
                     className="button"
                     onClick={[Function]}
           >
-                    Add Friend
+                    + Add Friend
           </glamorous(button)>
 </form>,
         "fixedHeight": -1,
@@ -286,6 +343,14 @@ ShallowWrapper {
               />
 </glamorous(form)>,
             <glamorous(form)>
+              Info:
+              <input
+                            name="info"
+                            onChange={[Function]}
+                            type="text"
+              />
+</glamorous(form)>,
+            <glamorous(form)>
               Avatar:
               <input
                             name="avatar"
@@ -297,7 +362,7 @@ ShallowWrapper {
               className="button"
               onClick={[Function]}
 >
-              Add Friend
+              + Add Friend
 </glamorous(button)>,
           ],
           "name": "Add a Friend",
@@ -357,6 +422,39 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
+                "Info:",
+                <input
+                  name="info"
+                  onChange={[Function]}
+                  type="text"
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Info:",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "info",
+                  "onChange": [Function],
+                  "type": "text",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
                 "Avatar:",
                 <input
                   name="avatar"
@@ -389,12 +487,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Add Friend",
+              "children": "+ Add Friend",
               "className": "button",
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": "Add Friend",
+            "rendered": "+ Add Friend",
             "type": [Function],
           },
         ],

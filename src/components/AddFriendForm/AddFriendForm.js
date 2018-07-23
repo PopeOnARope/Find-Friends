@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { AddFriendButton } from "../../App.js";
 import { addFriend } from "../../redux/reducers";
 
 import { Collapse } from "react-collapse";
 
-import glamorous, { ThemeProvider } from "glamorous";
+import glamorous from "glamorous";
 
 const Label = glamorous.form({
   padding: "0.5rem",
@@ -37,6 +37,14 @@ export class AddFriendForm extends React.Component {
             />
           </Label>
           <Label>
+            Info:
+            <input
+              name="info"
+              onChange={e => this.updateFormValues(e.target)}
+              type="text"
+            />
+          </Label>
+          <Label>
             Avatar:
             <input
               name="avatar"
@@ -49,9 +57,10 @@ export class AddFriendForm extends React.Component {
             onClick={e => {
               e && e.preventDefault();
               addFriend(this.state);
+              this.setState({ name: "", avatar: "" });
             }}
           >
-            Add Friend
+            + Add Friend
           </AddFriendButton>
         </form>
       </Collapse>

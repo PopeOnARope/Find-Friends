@@ -4,16 +4,56 @@ exports[`renders without crashing 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
+  Symbol(enzyme.__unrendered__): <Unknown
     showAddFriendForm={false}
+    theme="blue"
+    themes={
+        Object {
+            "CofC": Object {
+              "fontFamilyH1": "Lobster",
+              "primaryDark": "#660000",
+              "primaryLight": "#eee",
+            },
+            "blue": Object {
+              "fontFamilyH1": "bebas",
+              "primaryDark": "#326ada",
+              "primaryLight": "#d4d8d4",
+            },
+            "green": Object {
+              "fontFamilyH1": "Georgia",
+              "primaryDark": "#28965A",
+              "primaryLight": "#7CFEF0",
+            },
+            "mcDonalds": Object {
+              "fontFamilyH1": "roboto",
+              "primaryDark": "#E84855",
+              "primaryLight": "#FFFD82",
+            },
+          }
+    }
     user={
         Object {
             "friends": Array [
               Object {
-                "avatar": "https://placekitten.com/g/25/26",
+                "avatar": "https://placekitten.com/g/35/35",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 "lat": 32.796421,
                 "lng": -79.9312164,
                 "name": "Jim",
+              },
+              Object {
+                "avatar": "https://placekitten.com/g/35/36",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.795421,
+                "lng": -79.9412164,
+                "name": "James",
+              },
+              Object {
+                "avatar": "https://placekitten.com/g/35/34",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.794421,
+                "lng": -79.9612164,
+                "name": "Jenny",
               },
             ],
             "name": "John Pope",
@@ -40,34 +80,78 @@ ShallowWrapper {
                         !
                 </h1>
                 <h2>
-                        Lets find your friends!
+                        Let's find your friends!
                 </h2>
         </glamorous(div)>
-        <withProps(withScriptjs(withGoogleMap(Map)))
+        <Connect(withProps(withScriptjs(withGoogleMap(Map))))
                 friends={
                         Array [
                                 Object {
-                                  "avatar": "https://placekitten.com/g/25/26",
+                                  "avatar": "https://placekitten.com/g/35/35",
+                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                   "lat": 32.796421,
                                   "lng": -79.9312164,
                                   "name": "Jim",
                                 },
+                                Object {
+                                  "avatar": "https://placekitten.com/g/35/36",
+                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                  "lat": 32.795421,
+                                  "lng": -79.9412164,
+                                  "name": "James",
+                                },
+                                Object {
+                                  "avatar": "https://placekitten.com/g/35/34",
+                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                  "lat": 32.794421,
+                                  "lng": -79.9612164,
+                                  "name": "Jenny",
+                                },
                               ]
                 }
+                toggleDetails={undefined}
         />
         <glamorous(button)
                 className="button"
                 onClick={undefined}
         >
-                Add a Friend
+                + Add a Friend
         </glamorous(button)>
         <Connect(AddFriendForm)
-                isOpened={null}
+                isOpened={false}
         />
+        <label>
+                Select Branding Theme:
+                <select
+                        onChange={[Function]}
+                >
+                        <option
+                                value="blue"
+                        >
+                                blue
+                        </option>
+                        <option
+                                value="CofC"
+                        >
+                                CofC
+                        </option>
+                        <option
+                                value="green"
+                        >
+                                green
+                        </option>
+                        <option
+                                value="mcDonalds"
+                        >
+                                mcDonalds
+                        </option>
+                </select>
+        </label>
 </Unknown>,
       "theme": Object {
-        "primaryDark": "#B18FCF",
-        "primaryLight": "#D8D8F6",
+        "fontFamilyH1": "bebas",
+        "primaryDark": "#326ada",
+        "primaryLight": "#d4d8d4",
       },
     },
     "ref": null,
@@ -84,30 +168,73 @@ ShallowWrapper {
                         !
             </h1>
             <h2>
-                        Lets find your friends!
+                        Let's find your friends!
             </h2>
 </glamorous(div)>,
-          <withProps(withScriptjs(withGoogleMap(Map)))
+          <Connect(withProps(withScriptjs(withGoogleMap(Map))))
             friends={
                         Array [
                                     Object {
-                                      "avatar": "https://placekitten.com/g/25/26",
+                                      "avatar": "https://placekitten.com/g/35/35",
+                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                       "lat": 32.796421,
                                       "lng": -79.9312164,
                                       "name": "Jim",
                                     },
+                                    Object {
+                                      "avatar": "https://placekitten.com/g/35/36",
+                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                      "lat": 32.795421,
+                                      "lng": -79.9412164,
+                                      "name": "James",
+                                    },
+                                    Object {
+                                      "avatar": "https://placekitten.com/g/35/34",
+                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                      "lat": 32.794421,
+                                      "lng": -79.9612164,
+                                      "name": "Jenny",
+                                    },
                                   ]
             }
+            toggleDetails={undefined}
 />,
           <glamorous(button)
             className="button"
             onClick={undefined}
 >
-            Add a Friend
+            + Add a Friend
 </glamorous(button)>,
           <Connect(AddFriendForm)
-            isOpened={null}
+            isOpened={false}
 />,
+          <label>
+            Select Branding Theme:
+            <select
+                        onChange={[Function]}
+            >
+                        <option
+                                    value="blue"
+                        >
+                                    blue
+                        </option>
+                        <option
+                                    value="CofC"
+                        >
+                                    CofC
+                        </option>
+                        <option
+                                    value="green"
+                        >
+                                    green
+                        </option>
+                        <option
+                                    value="mcDonalds"
+                        >
+                                    mcDonalds
+                        </option>
+            </select>
+</label>,
         ],
       },
       "ref": null,
@@ -124,7 +251,7 @@ ShallowWrapper {
                 !
 </h1>,
               <h2>
-                Lets find your friends!
+                Let's find your friends!
 </h2>,
             ],
           },
@@ -154,10 +281,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Lets find your friends!",
+                "children": "Let's find your friends!",
               },
               "ref": null,
-              "rendered": "Lets find your friends!",
+              "rendered": "Let's find your friends!",
               "type": "h2",
             },
           ],
@@ -166,16 +293,32 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "friends": Array [
               Object {
-                "avatar": "https://placekitten.com/g/25/26",
+                "avatar": "https://placekitten.com/g/35/35",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 "lat": 32.796421,
                 "lng": -79.9312164,
                 "name": "Jim",
               },
+              Object {
+                "avatar": "https://placekitten.com/g/35/36",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.795421,
+                "lng": -79.9412164,
+                "name": "James",
+              },
+              Object {
+                "avatar": "https://placekitten.com/g/35/34",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.794421,
+                "lng": -79.9612164,
+                "name": "Jenny",
+              },
             ],
+            "toggleDetails": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -186,12 +329,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Add a Friend",
+            "children": "+ Add a Friend",
             "className": "button",
             "onClick": undefined,
           },
           "ref": null,
-          "rendered": "Add a Friend",
+          "rendered": "+ Add a Friend",
           "type": [Function],
         },
         Object {
@@ -199,11 +342,132 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "isOpened": null,
+            "isOpened": false,
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Select Branding Theme:",
+              <select
+                onChange={[Function]}
+>
+                <option
+                                value="blue"
+                >
+                                blue
+                </option>
+                <option
+                                value="CofC"
+                >
+                                CofC
+                </option>
+                <option
+                                value="green"
+                >
+                                green
+                </option>
+                <option
+                                value="mcDonalds"
+                >
+                                mcDonalds
+                </option>
+</select>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Select Branding Theme:",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value="blue"
+>
+                    blue
+</option>,
+                  <option
+                    value="CofC"
+>
+                    CofC
+</option>,
+                  <option
+                    value="green"
+>
+                    green
+</option>,
+                  <option
+                    value="mcDonalds"
+>
+                    mcDonalds
+</option>,
+                ],
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "blue",
+                    "value": "blue",
+                  },
+                  "ref": null,
+                  "rendered": "blue",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "CofC",
+                    "value": "CofC",
+                  },
+                  "ref": null,
+                  "rendered": "CofC",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "green",
+                    "value": "green",
+                  },
+                  "ref": null,
+                  "rendered": "green",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "mcDonalds",
+                    "value": "mcDonalds",
+                  },
+                  "ref": null,
+                  "rendered": "mcDonalds",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+          ],
+          "type": "label",
         },
       ],
       "type": Symbol(react.fragment),
@@ -224,34 +488,78 @@ ShallowWrapper {
                               !
                     </h1>
                     <h2>
-                              Lets find your friends!
+                              Let's find your friends!
                     </h2>
           </glamorous(div)>
-          <withProps(withScriptjs(withGoogleMap(Map)))
+          <Connect(withProps(withScriptjs(withGoogleMap(Map))))
                     friends={
                               Array [
                                         Object {
-                                          "avatar": "https://placekitten.com/g/25/26",
+                                          "avatar": "https://placekitten.com/g/35/35",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                           "lat": 32.796421,
                                           "lng": -79.9312164,
                                           "name": "Jim",
                                         },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/36",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.795421,
+                                          "lng": -79.9412164,
+                                          "name": "James",
+                                        },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/34",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.794421,
+                                          "lng": -79.9612164,
+                                          "name": "Jenny",
+                                        },
                                       ]
                     }
+                    toggleDetails={undefined}
           />
           <glamorous(button)
                     className="button"
                     onClick={undefined}
           >
-                    Add a Friend
+                    + Add a Friend
           </glamorous(button)>
           <Connect(AddFriendForm)
-                    isOpened={null}
+                    isOpened={false}
           />
+          <label>
+                    Select Branding Theme:
+                    <select
+                              onChange={[Function]}
+                    >
+                              <option
+                                        value="blue"
+                              >
+                                        blue
+                              </option>
+                              <option
+                                        value="CofC"
+                              >
+                                        CofC
+                              </option>
+                              <option
+                                        value="green"
+                              >
+                                        green
+                              </option>
+                              <option
+                                        value="mcDonalds"
+                              >
+                                        mcDonalds
+                              </option>
+                    </select>
+          </label>
 </Unknown>,
         "theme": Object {
-          "primaryDark": "#B18FCF",
-          "primaryLight": "#D8D8F6",
+          "fontFamilyH1": "bebas",
+          "primaryDark": "#326ada",
+          "primaryLight": "#d4d8d4",
         },
       },
       "ref": null,
@@ -268,30 +576,73 @@ ShallowWrapper {
                             !
               </h1>
               <h2>
-                            Lets find your friends!
+                            Let's find your friends!
               </h2>
 </glamorous(div)>,
-            <withProps(withScriptjs(withGoogleMap(Map)))
+            <Connect(withProps(withScriptjs(withGoogleMap(Map))))
               friends={
                             Array [
                                           Object {
-                                            "avatar": "https://placekitten.com/g/25/26",
+                                            "avatar": "https://placekitten.com/g/35/35",
+                                            "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                             "lat": 32.796421,
                                             "lng": -79.9312164,
                                             "name": "Jim",
                                           },
+                                          Object {
+                                            "avatar": "https://placekitten.com/g/35/36",
+                                            "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                            "lat": 32.795421,
+                                            "lng": -79.9412164,
+                                            "name": "James",
+                                          },
+                                          Object {
+                                            "avatar": "https://placekitten.com/g/35/34",
+                                            "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                            "lat": 32.794421,
+                                            "lng": -79.9612164,
+                                            "name": "Jenny",
+                                          },
                                         ]
               }
+              toggleDetails={undefined}
 />,
             <glamorous(button)
               className="button"
               onClick={undefined}
 >
-              Add a Friend
+              + Add a Friend
 </glamorous(button)>,
             <Connect(AddFriendForm)
-              isOpened={null}
+              isOpened={false}
 />,
+            <label>
+              Select Branding Theme:
+              <select
+                            onChange={[Function]}
+              >
+                            <option
+                                          value="blue"
+                            >
+                                          blue
+                            </option>
+                            <option
+                                          value="CofC"
+                            >
+                                          CofC
+                            </option>
+                            <option
+                                          value="green"
+                            >
+                                          green
+                            </option>
+                            <option
+                                          value="mcDonalds"
+                            >
+                                          mcDonalds
+                            </option>
+              </select>
+</label>,
           ],
         },
         "ref": null,
@@ -308,7 +659,7 @@ ShallowWrapper {
                   !
 </h1>,
                 <h2>
-                  Lets find your friends!
+                  Let's find your friends!
 </h2>,
               ],
             },
@@ -338,10 +689,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Lets find your friends!",
+                  "children": "Let's find your friends!",
                 },
                 "ref": null,
-                "rendered": "Lets find your friends!",
+                "rendered": "Let's find your friends!",
                 "type": "h2",
               },
             ],
@@ -350,16 +701,32 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "friends": Array [
                 Object {
-                  "avatar": "https://placekitten.com/g/25/26",
+                  "avatar": "https://placekitten.com/g/35/35",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                   "lat": 32.796421,
                   "lng": -79.9312164,
                   "name": "Jim",
                 },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/36",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.795421,
+                  "lng": -79.9412164,
+                  "name": "James",
+                },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/34",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.794421,
+                  "lng": -79.9612164,
+                  "name": "Jenny",
+                },
               ],
+              "toggleDetails": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -370,12 +737,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Add a Friend",
+              "children": "+ Add a Friend",
               "className": "button",
               "onClick": undefined,
             },
             "ref": null,
-            "rendered": "Add a Friend",
+            "rendered": "+ Add a Friend",
             "type": [Function],
           },
           Object {
@@ -383,11 +750,132 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "isOpened": null,
+              "isOpened": false,
             },
             "ref": null,
             "rendered": null,
             "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Select Branding Theme:",
+                <select
+                  onChange={[Function]}
+>
+                  <option
+                                    value="blue"
+                  >
+                                    blue
+                  </option>
+                  <option
+                                    value="CofC"
+                  >
+                                    CofC
+                  </option>
+                  <option
+                                    value="green"
+                  >
+                                    green
+                  </option>
+                  <option
+                                    value="mcDonalds"
+                  >
+                                    mcDonalds
+                  </option>
+</select>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Select Branding Theme:",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      value="blue"
+>
+                      blue
+</option>,
+                    <option
+                      value="CofC"
+>
+                      CofC
+</option>,
+                    <option
+                      value="green"
+>
+                      green
+</option>,
+                    <option
+                      value="mcDonalds"
+>
+                      mcDonalds
+</option>,
+                  ],
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "blue",
+                      "value": "blue",
+                    },
+                    "ref": null,
+                    "rendered": "blue",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "CofC",
+                      "value": "CofC",
+                    },
+                    "ref": null,
+                    "rendered": "CofC",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "green",
+                      "value": "green",
+                    },
+                    "ref": null,
+                    "rendered": "green",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "mcDonalds",
+                      "value": "mcDonalds",
+                    },
+                    "ref": null,
+                    "rendered": "mcDonalds",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+            ],
+            "type": "label",
           },
         ],
         "type": Symbol(react.fragment),
@@ -409,16 +897,56 @@ exports[`shows the add friend form 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
+  Symbol(enzyme.__unrendered__): <Unknown
     showAddFriendForm={true}
+    theme="blue"
+    themes={
+        Object {
+            "CofC": Object {
+              "fontFamilyH1": "Lobster",
+              "primaryDark": "#660000",
+              "primaryLight": "#eee",
+            },
+            "blue": Object {
+              "fontFamilyH1": "bebas",
+              "primaryDark": "#326ada",
+              "primaryLight": "#d4d8d4",
+            },
+            "green": Object {
+              "fontFamilyH1": "Georgia",
+              "primaryDark": "#28965A",
+              "primaryLight": "#7CFEF0",
+            },
+            "mcDonalds": Object {
+              "fontFamilyH1": "roboto",
+              "primaryDark": "#E84855",
+              "primaryLight": "#FFFD82",
+            },
+          }
+    }
     user={
         Object {
             "friends": Array [
               Object {
-                "avatar": "https://placekitten.com/g/25/26",
+                "avatar": "https://placekitten.com/g/35/35",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 "lat": 32.796421,
                 "lng": -79.9312164,
                 "name": "Jim",
+              },
+              Object {
+                "avatar": "https://placekitten.com/g/35/36",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.795421,
+                "lng": -79.9412164,
+                "name": "James",
+              },
+              Object {
+                "avatar": "https://placekitten.com/g/35/34",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.794421,
+                "lng": -79.9612164,
+                "name": "Jenny",
               },
             ],
             "name": "John Pope",
@@ -445,28 +973,72 @@ ShallowWrapper {
                         !
                 </h1>
                 <h2>
-                        Lets find your friends!
+                        Let's find your friends!
                 </h2>
         </glamorous(div)>
-        <withProps(withScriptjs(withGoogleMap(Map)))
+        <Connect(withProps(withScriptjs(withGoogleMap(Map))))
                 friends={
                         Array [
                                 Object {
-                                  "avatar": "https://placekitten.com/g/25/26",
+                                  "avatar": "https://placekitten.com/g/35/35",
+                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                   "lat": 32.796421,
                                   "lng": -79.9312164,
                                   "name": "Jim",
                                 },
+                                Object {
+                                  "avatar": "https://placekitten.com/g/35/36",
+                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                  "lat": 32.795421,
+                                  "lng": -79.9412164,
+                                  "name": "James",
+                                },
+                                Object {
+                                  "avatar": "https://placekitten.com/g/35/34",
+                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                  "lat": 32.794421,
+                                  "lng": -79.9612164,
+                                  "name": "Jenny",
+                                },
                               ]
                 }
+                toggleDetails={undefined}
         />
         <Connect(AddFriendForm)
-                isOpened={null}
+                isOpened={true}
         />
+        <label>
+                Select Branding Theme:
+                <select
+                        onChange={[Function]}
+                >
+                        <option
+                                value="blue"
+                        >
+                                blue
+                        </option>
+                        <option
+                                value="CofC"
+                        >
+                                CofC
+                        </option>
+                        <option
+                                value="green"
+                        >
+                                green
+                        </option>
+                        <option
+                                value="mcDonalds"
+                        >
+                                mcDonalds
+                        </option>
+                </select>
+        </label>
 </Unknown>,
       "theme": Object {
-        "primaryDark": "#B18FCF",
-        "primaryLight": "#D8D8F6",
+        "fontFamilyH1": "bebas",
+        "primaryDark": "#326ada",
+        "primaryLight": "#d4d8d4",
       },
     },
     "ref": null,
@@ -483,25 +1055,68 @@ ShallowWrapper {
                         !
             </h1>
             <h2>
-                        Lets find your friends!
+                        Let's find your friends!
             </h2>
 </glamorous(div)>,
-          <withProps(withScriptjs(withGoogleMap(Map)))
+          <Connect(withProps(withScriptjs(withGoogleMap(Map))))
             friends={
                         Array [
                                     Object {
-                                      "avatar": "https://placekitten.com/g/25/26",
+                                      "avatar": "https://placekitten.com/g/35/35",
+                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                       "lat": 32.796421,
                                       "lng": -79.9312164,
                                       "name": "Jim",
                                     },
+                                    Object {
+                                      "avatar": "https://placekitten.com/g/35/36",
+                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                      "lat": 32.795421,
+                                      "lng": -79.9412164,
+                                      "name": "James",
+                                    },
+                                    Object {
+                                      "avatar": "https://placekitten.com/g/35/34",
+                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                      "lat": 32.794421,
+                                      "lng": -79.9612164,
+                                      "name": "Jenny",
+                                    },
                                   ]
             }
+            toggleDetails={undefined}
 />,
           false,
           <Connect(AddFriendForm)
-            isOpened={null}
+            isOpened={true}
 />,
+          <label>
+            Select Branding Theme:
+            <select
+                        onChange={[Function]}
+            >
+                        <option
+                                    value="blue"
+                        >
+                                    blue
+                        </option>
+                        <option
+                                    value="CofC"
+                        >
+                                    CofC
+                        </option>
+                        <option
+                                    value="green"
+                        >
+                                    green
+                        </option>
+                        <option
+                                    value="mcDonalds"
+                        >
+                                    mcDonalds
+                        </option>
+            </select>
+</label>,
         ],
       },
       "ref": null,
@@ -518,7 +1133,7 @@ ShallowWrapper {
                 !
 </h1>,
               <h2>
-                Lets find your friends!
+                Let's find your friends!
 </h2>,
             ],
           },
@@ -548,10 +1163,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Lets find your friends!",
+                "children": "Let's find your friends!",
               },
               "ref": null,
-              "rendered": "Lets find your friends!",
+              "rendered": "Let's find your friends!",
               "type": "h2",
             },
           ],
@@ -560,16 +1175,32 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "friends": Array [
               Object {
-                "avatar": "https://placekitten.com/g/25/26",
+                "avatar": "https://placekitten.com/g/35/35",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 "lat": 32.796421,
                 "lng": -79.9312164,
                 "name": "Jim",
               },
+              Object {
+                "avatar": "https://placekitten.com/g/35/36",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.795421,
+                "lng": -79.9412164,
+                "name": "James",
+              },
+              Object {
+                "avatar": "https://placekitten.com/g/35/34",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.794421,
+                "lng": -79.9612164,
+                "name": "Jenny",
+              },
             ],
+            "toggleDetails": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -581,11 +1212,132 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "isOpened": null,
+            "isOpened": true,
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Select Branding Theme:",
+              <select
+                onChange={[Function]}
+>
+                <option
+                                value="blue"
+                >
+                                blue
+                </option>
+                <option
+                                value="CofC"
+                >
+                                CofC
+                </option>
+                <option
+                                value="green"
+                >
+                                green
+                </option>
+                <option
+                                value="mcDonalds"
+                >
+                                mcDonalds
+                </option>
+</select>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Select Branding Theme:",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value="blue"
+>
+                    blue
+</option>,
+                  <option
+                    value="CofC"
+>
+                    CofC
+</option>,
+                  <option
+                    value="green"
+>
+                    green
+</option>,
+                  <option
+                    value="mcDonalds"
+>
+                    mcDonalds
+</option>,
+                ],
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "blue",
+                    "value": "blue",
+                  },
+                  "ref": null,
+                  "rendered": "blue",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "CofC",
+                    "value": "CofC",
+                  },
+                  "ref": null,
+                  "rendered": "CofC",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "green",
+                    "value": "green",
+                  },
+                  "ref": null,
+                  "rendered": "green",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "mcDonalds",
+                    "value": "mcDonalds",
+                  },
+                  "ref": null,
+                  "rendered": "mcDonalds",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+          ],
+          "type": "label",
         },
       ],
       "type": Symbol(react.fragment),
@@ -606,28 +1358,72 @@ ShallowWrapper {
                               !
                     </h1>
                     <h2>
-                              Lets find your friends!
+                              Let's find your friends!
                     </h2>
           </glamorous(div)>
-          <withProps(withScriptjs(withGoogleMap(Map)))
+          <Connect(withProps(withScriptjs(withGoogleMap(Map))))
                     friends={
                               Array [
                                         Object {
-                                          "avatar": "https://placekitten.com/g/25/26",
+                                          "avatar": "https://placekitten.com/g/35/35",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                           "lat": 32.796421,
                                           "lng": -79.9312164,
                                           "name": "Jim",
                                         },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/36",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.795421,
+                                          "lng": -79.9412164,
+                                          "name": "James",
+                                        },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/34",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.794421,
+                                          "lng": -79.9612164,
+                                          "name": "Jenny",
+                                        },
                                       ]
                     }
+                    toggleDetails={undefined}
           />
           <Connect(AddFriendForm)
-                    isOpened={null}
+                    isOpened={true}
           />
+          <label>
+                    Select Branding Theme:
+                    <select
+                              onChange={[Function]}
+                    >
+                              <option
+                                        value="blue"
+                              >
+                                        blue
+                              </option>
+                              <option
+                                        value="CofC"
+                              >
+                                        CofC
+                              </option>
+                              <option
+                                        value="green"
+                              >
+                                        green
+                              </option>
+                              <option
+                                        value="mcDonalds"
+                              >
+                                        mcDonalds
+                              </option>
+                    </select>
+          </label>
 </Unknown>,
         "theme": Object {
-          "primaryDark": "#B18FCF",
-          "primaryLight": "#D8D8F6",
+          "fontFamilyH1": "bebas",
+          "primaryDark": "#326ada",
+          "primaryLight": "#d4d8d4",
         },
       },
       "ref": null,
@@ -644,25 +1440,68 @@ ShallowWrapper {
                             !
               </h1>
               <h2>
-                            Lets find your friends!
+                            Let's find your friends!
               </h2>
 </glamorous(div)>,
-            <withProps(withScriptjs(withGoogleMap(Map)))
+            <Connect(withProps(withScriptjs(withGoogleMap(Map))))
               friends={
                             Array [
                                           Object {
-                                            "avatar": "https://placekitten.com/g/25/26",
+                                            "avatar": "https://placekitten.com/g/35/35",
+                                            "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                             "lat": 32.796421,
                                             "lng": -79.9312164,
                                             "name": "Jim",
                                           },
+                                          Object {
+                                            "avatar": "https://placekitten.com/g/35/36",
+                                            "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                            "lat": 32.795421,
+                                            "lng": -79.9412164,
+                                            "name": "James",
+                                          },
+                                          Object {
+                                            "avatar": "https://placekitten.com/g/35/34",
+                                            "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                            "lat": 32.794421,
+                                            "lng": -79.9612164,
+                                            "name": "Jenny",
+                                          },
                                         ]
               }
+              toggleDetails={undefined}
 />,
             false,
             <Connect(AddFriendForm)
-              isOpened={null}
+              isOpened={true}
 />,
+            <label>
+              Select Branding Theme:
+              <select
+                            onChange={[Function]}
+              >
+                            <option
+                                          value="blue"
+                            >
+                                          blue
+                            </option>
+                            <option
+                                          value="CofC"
+                            >
+                                          CofC
+                            </option>
+                            <option
+                                          value="green"
+                            >
+                                          green
+                            </option>
+                            <option
+                                          value="mcDonalds"
+                            >
+                                          mcDonalds
+                            </option>
+              </select>
+</label>,
           ],
         },
         "ref": null,
@@ -679,7 +1518,7 @@ ShallowWrapper {
                   !
 </h1>,
                 <h2>
-                  Lets find your friends!
+                  Let's find your friends!
 </h2>,
               ],
             },
@@ -709,10 +1548,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Lets find your friends!",
+                  "children": "Let's find your friends!",
                 },
                 "ref": null,
-                "rendered": "Lets find your friends!",
+                "rendered": "Let's find your friends!",
                 "type": "h2",
               },
             ],
@@ -721,16 +1560,32 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "friends": Array [
                 Object {
-                  "avatar": "https://placekitten.com/g/25/26",
+                  "avatar": "https://placekitten.com/g/35/35",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                   "lat": 32.796421,
                   "lng": -79.9312164,
                   "name": "Jim",
                 },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/36",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.795421,
+                  "lng": -79.9412164,
+                  "name": "James",
+                },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/34",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.794421,
+                  "lng": -79.9612164,
+                  "name": "Jenny",
+                },
               ],
+              "toggleDetails": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -742,11 +1597,132 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "isOpened": null,
+              "isOpened": true,
             },
             "ref": null,
             "rendered": null,
             "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Select Branding Theme:",
+                <select
+                  onChange={[Function]}
+>
+                  <option
+                                    value="blue"
+                  >
+                                    blue
+                  </option>
+                  <option
+                                    value="CofC"
+                  >
+                                    CofC
+                  </option>
+                  <option
+                                    value="green"
+                  >
+                                    green
+                  </option>
+                  <option
+                                    value="mcDonalds"
+                  >
+                                    mcDonalds
+                  </option>
+</select>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Select Branding Theme:",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      value="blue"
+>
+                      blue
+</option>,
+                    <option
+                      value="CofC"
+>
+                      CofC
+</option>,
+                    <option
+                      value="green"
+>
+                      green
+</option>,
+                    <option
+                      value="mcDonalds"
+>
+                      mcDonalds
+</option>,
+                  ],
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "blue",
+                      "value": "blue",
+                    },
+                    "ref": null,
+                    "rendered": "blue",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "CofC",
+                      "value": "CofC",
+                    },
+                    "ref": null,
+                    "rendered": "CofC",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "green",
+                      "value": "green",
+                    },
+                    "ref": null,
+                    "rendered": "green",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "mcDonalds",
+                      "value": "mcDonalds",
+                    },
+                    "ref": null,
+                    "rendered": "mcDonalds",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+            ],
+            "type": "label",
           },
         ],
         "type": Symbol(react.fragment),
@@ -768,17 +1744,57 @@ exports[`toggles the new friend form when the add friend button is clicked 1`] =
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
+  Symbol(enzyme.__unrendered__): <Unknown
     showAddFriendForm={false}
+    theme="blue"
+    themes={
+        Object {
+            "CofC": Object {
+              "fontFamilyH1": "Lobster",
+              "primaryDark": "#660000",
+              "primaryLight": "#eee",
+            },
+            "blue": Object {
+              "fontFamilyH1": "bebas",
+              "primaryDark": "#326ada",
+              "primaryLight": "#d4d8d4",
+            },
+            "green": Object {
+              "fontFamilyH1": "Georgia",
+              "primaryDark": "#28965A",
+              "primaryLight": "#7CFEF0",
+            },
+            "mcDonalds": Object {
+              "fontFamilyH1": "roboto",
+              "primaryDark": "#E84855",
+              "primaryLight": "#FFFD82",
+            },
+          }
+    }
     toggleAddFriendForm={[Function]}
     user={
         Object {
             "friends": Array [
               Object {
-                "avatar": "https://placekitten.com/g/25/26",
+                "avatar": "https://placekitten.com/g/35/35",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 "lat": 32.796421,
                 "lng": -79.9312164,
                 "name": "Jim",
+              },
+              Object {
+                "avatar": "https://placekitten.com/g/35/36",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.795421,
+                "lng": -79.9412164,
+                "name": "James",
+              },
+              Object {
+                "avatar": "https://placekitten.com/g/35/34",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.794421,
+                "lng": -79.9612164,
+                "name": "Jenny",
               },
             ],
             "name": "John Pope",
@@ -805,34 +1821,78 @@ ShallowWrapper {
                         !
                 </h1>
                 <h2>
-                        Lets find your friends!
+                        Let's find your friends!
                 </h2>
         </glamorous(div)>
-        <withProps(withScriptjs(withGoogleMap(Map)))
+        <Connect(withProps(withScriptjs(withGoogleMap(Map))))
                 friends={
                         Array [
                                 Object {
-                                  "avatar": "https://placekitten.com/g/25/26",
+                                  "avatar": "https://placekitten.com/g/35/35",
+                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                   "lat": 32.796421,
                                   "lng": -79.9312164,
                                   "name": "Jim",
                                 },
+                                Object {
+                                  "avatar": "https://placekitten.com/g/35/36",
+                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                  "lat": 32.795421,
+                                  "lng": -79.9412164,
+                                  "name": "James",
+                                },
+                                Object {
+                                  "avatar": "https://placekitten.com/g/35/34",
+                                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                  "lat": 32.794421,
+                                  "lng": -79.9612164,
+                                  "name": "Jenny",
+                                },
                               ]
                 }
+                toggleDetails={undefined}
         />
         <glamorous(button)
                 className="button"
                 onClick={[Function]}
         >
-                Add a Friend
+                + Add a Friend
         </glamorous(button)>
         <Connect(AddFriendForm)
-                isOpened={null}
+                isOpened={false}
         />
+        <label>
+                Select Branding Theme:
+                <select
+                        onChange={[Function]}
+                >
+                        <option
+                                value="blue"
+                        >
+                                blue
+                        </option>
+                        <option
+                                value="CofC"
+                        >
+                                CofC
+                        </option>
+                        <option
+                                value="green"
+                        >
+                                green
+                        </option>
+                        <option
+                                value="mcDonalds"
+                        >
+                                mcDonalds
+                        </option>
+                </select>
+        </label>
 </Unknown>,
       "theme": Object {
-        "primaryDark": "#B18FCF",
-        "primaryLight": "#D8D8F6",
+        "fontFamilyH1": "bebas",
+        "primaryDark": "#326ada",
+        "primaryLight": "#d4d8d4",
       },
     },
     "ref": null,
@@ -849,30 +1909,73 @@ ShallowWrapper {
                         !
             </h1>
             <h2>
-                        Lets find your friends!
+                        Let's find your friends!
             </h2>
 </glamorous(div)>,
-          <withProps(withScriptjs(withGoogleMap(Map)))
+          <Connect(withProps(withScriptjs(withGoogleMap(Map))))
             friends={
                         Array [
                                     Object {
-                                      "avatar": "https://placekitten.com/g/25/26",
+                                      "avatar": "https://placekitten.com/g/35/35",
+                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                       "lat": 32.796421,
                                       "lng": -79.9312164,
                                       "name": "Jim",
                                     },
+                                    Object {
+                                      "avatar": "https://placekitten.com/g/35/36",
+                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                      "lat": 32.795421,
+                                      "lng": -79.9412164,
+                                      "name": "James",
+                                    },
+                                    Object {
+                                      "avatar": "https://placekitten.com/g/35/34",
+                                      "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                      "lat": 32.794421,
+                                      "lng": -79.9612164,
+                                      "name": "Jenny",
+                                    },
                                   ]
             }
+            toggleDetails={undefined}
 />,
           <glamorous(button)
             className="button"
             onClick={[Function]}
 >
-            Add a Friend
+            + Add a Friend
 </glamorous(button)>,
           <Connect(AddFriendForm)
-            isOpened={null}
+            isOpened={false}
 />,
+          <label>
+            Select Branding Theme:
+            <select
+                        onChange={[Function]}
+            >
+                        <option
+                                    value="blue"
+                        >
+                                    blue
+                        </option>
+                        <option
+                                    value="CofC"
+                        >
+                                    CofC
+                        </option>
+                        <option
+                                    value="green"
+                        >
+                                    green
+                        </option>
+                        <option
+                                    value="mcDonalds"
+                        >
+                                    mcDonalds
+                        </option>
+            </select>
+</label>,
         ],
       },
       "ref": null,
@@ -889,7 +1992,7 @@ ShallowWrapper {
                 !
 </h1>,
               <h2>
-                Lets find your friends!
+                Let's find your friends!
 </h2>,
             ],
           },
@@ -919,10 +2022,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Lets find your friends!",
+                "children": "Let's find your friends!",
               },
               "ref": null,
-              "rendered": "Lets find your friends!",
+              "rendered": "Let's find your friends!",
               "type": "h2",
             },
           ],
@@ -931,16 +2034,32 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "friends": Array [
               Object {
-                "avatar": "https://placekitten.com/g/25/26",
+                "avatar": "https://placekitten.com/g/35/35",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 "lat": 32.796421,
                 "lng": -79.9312164,
                 "name": "Jim",
               },
+              Object {
+                "avatar": "https://placekitten.com/g/35/36",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.795421,
+                "lng": -79.9412164,
+                "name": "James",
+              },
+              Object {
+                "avatar": "https://placekitten.com/g/35/34",
+                "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "lat": 32.794421,
+                "lng": -79.9612164,
+                "name": "Jenny",
+              },
             ],
+            "toggleDetails": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -951,12 +2070,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Add a Friend",
+            "children": "+ Add a Friend",
             "className": "button",
             "onClick": [Function],
           },
           "ref": null,
-          "rendered": "Add a Friend",
+          "rendered": "+ Add a Friend",
           "type": [Function],
         },
         Object {
@@ -964,11 +2083,132 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "isOpened": null,
+            "isOpened": false,
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Select Branding Theme:",
+              <select
+                onChange={[Function]}
+>
+                <option
+                                value="blue"
+                >
+                                blue
+                </option>
+                <option
+                                value="CofC"
+                >
+                                CofC
+                </option>
+                <option
+                                value="green"
+                >
+                                green
+                </option>
+                <option
+                                value="mcDonalds"
+                >
+                                mcDonalds
+                </option>
+</select>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Select Branding Theme:",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value="blue"
+>
+                    blue
+</option>,
+                  <option
+                    value="CofC"
+>
+                    CofC
+</option>,
+                  <option
+                    value="green"
+>
+                    green
+</option>,
+                  <option
+                    value="mcDonalds"
+>
+                    mcDonalds
+</option>,
+                ],
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "blue",
+                    "value": "blue",
+                  },
+                  "ref": null,
+                  "rendered": "blue",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "CofC",
+                    "value": "CofC",
+                  },
+                  "ref": null,
+                  "rendered": "CofC",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "green",
+                    "value": "green",
+                  },
+                  "ref": null,
+                  "rendered": "green",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "mcDonalds",
+                    "value": "mcDonalds",
+                  },
+                  "ref": null,
+                  "rendered": "mcDonalds",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+          ],
+          "type": "label",
         },
       ],
       "type": Symbol(react.fragment),
@@ -989,34 +2229,78 @@ ShallowWrapper {
                               !
                     </h1>
                     <h2>
-                              Lets find your friends!
+                              Let's find your friends!
                     </h2>
           </glamorous(div)>
-          <withProps(withScriptjs(withGoogleMap(Map)))
+          <Connect(withProps(withScriptjs(withGoogleMap(Map))))
                     friends={
                               Array [
                                         Object {
-                                          "avatar": "https://placekitten.com/g/25/26",
+                                          "avatar": "https://placekitten.com/g/35/35",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                           "lat": 32.796421,
                                           "lng": -79.9312164,
                                           "name": "Jim",
                                         },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/36",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.795421,
+                                          "lng": -79.9412164,
+                                          "name": "James",
+                                        },
+                                        Object {
+                                          "avatar": "https://placekitten.com/g/35/34",
+                                          "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                          "lat": 32.794421,
+                                          "lng": -79.9612164,
+                                          "name": "Jenny",
+                                        },
                                       ]
                     }
+                    toggleDetails={undefined}
           />
           <glamorous(button)
                     className="button"
                     onClick={[Function]}
           >
-                    Add a Friend
+                    + Add a Friend
           </glamorous(button)>
           <Connect(AddFriendForm)
-                    isOpened={null}
+                    isOpened={false}
           />
+          <label>
+                    Select Branding Theme:
+                    <select
+                              onChange={[Function]}
+                    >
+                              <option
+                                        value="blue"
+                              >
+                                        blue
+                              </option>
+                              <option
+                                        value="CofC"
+                              >
+                                        CofC
+                              </option>
+                              <option
+                                        value="green"
+                              >
+                                        green
+                              </option>
+                              <option
+                                        value="mcDonalds"
+                              >
+                                        mcDonalds
+                              </option>
+                    </select>
+          </label>
 </Unknown>,
         "theme": Object {
-          "primaryDark": "#B18FCF",
-          "primaryLight": "#D8D8F6",
+          "fontFamilyH1": "bebas",
+          "primaryDark": "#326ada",
+          "primaryLight": "#d4d8d4",
         },
       },
       "ref": null,
@@ -1033,30 +2317,73 @@ ShallowWrapper {
                             !
               </h1>
               <h2>
-                            Lets find your friends!
+                            Let's find your friends!
               </h2>
 </glamorous(div)>,
-            <withProps(withScriptjs(withGoogleMap(Map)))
+            <Connect(withProps(withScriptjs(withGoogleMap(Map))))
               friends={
                             Array [
                                           Object {
-                                            "avatar": "https://placekitten.com/g/25/26",
+                                            "avatar": "https://placekitten.com/g/35/35",
+                                            "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                             "lat": 32.796421,
                                             "lng": -79.9312164,
                                             "name": "Jim",
                                           },
+                                          Object {
+                                            "avatar": "https://placekitten.com/g/35/36",
+                                            "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                            "lat": 32.795421,
+                                            "lng": -79.9412164,
+                                            "name": "James",
+                                          },
+                                          Object {
+                                            "avatar": "https://placekitten.com/g/35/34",
+                                            "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                            "lat": 32.794421,
+                                            "lng": -79.9612164,
+                                            "name": "Jenny",
+                                          },
                                         ]
               }
+              toggleDetails={undefined}
 />,
             <glamorous(button)
               className="button"
               onClick={[Function]}
 >
-              Add a Friend
+              + Add a Friend
 </glamorous(button)>,
             <Connect(AddFriendForm)
-              isOpened={null}
+              isOpened={false}
 />,
+            <label>
+              Select Branding Theme:
+              <select
+                            onChange={[Function]}
+              >
+                            <option
+                                          value="blue"
+                            >
+                                          blue
+                            </option>
+                            <option
+                                          value="CofC"
+                            >
+                                          CofC
+                            </option>
+                            <option
+                                          value="green"
+                            >
+                                          green
+                            </option>
+                            <option
+                                          value="mcDonalds"
+                            >
+                                          mcDonalds
+                            </option>
+              </select>
+</label>,
           ],
         },
         "ref": null,
@@ -1073,7 +2400,7 @@ ShallowWrapper {
                   !
 </h1>,
                 <h2>
-                  Lets find your friends!
+                  Let's find your friends!
 </h2>,
               ],
             },
@@ -1103,10 +2430,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Lets find your friends!",
+                  "children": "Let's find your friends!",
                 },
                 "ref": null,
-                "rendered": "Lets find your friends!",
+                "rendered": "Let's find your friends!",
                 "type": "h2",
               },
             ],
@@ -1115,16 +2442,32 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "friends": Array [
                 Object {
-                  "avatar": "https://placekitten.com/g/25/26",
+                  "avatar": "https://placekitten.com/g/35/35",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                   "lat": 32.796421,
                   "lng": -79.9312164,
                   "name": "Jim",
                 },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/36",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.795421,
+                  "lng": -79.9412164,
+                  "name": "James",
+                },
+                Object {
+                  "avatar": "https://placekitten.com/g/35/34",
+                  "info": "Lorem ipsum dolor sit amet, cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  "lat": 32.794421,
+                  "lng": -79.9612164,
+                  "name": "Jenny",
+                },
               ],
+              "toggleDetails": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -1135,12 +2478,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Add a Friend",
+              "children": "+ Add a Friend",
               "className": "button",
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": "Add a Friend",
+            "rendered": "+ Add a Friend",
             "type": [Function],
           },
           Object {
@@ -1148,11 +2491,132 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "isOpened": null,
+              "isOpened": false,
             },
             "ref": null,
             "rendered": null,
             "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Select Branding Theme:",
+                <select
+                  onChange={[Function]}
+>
+                  <option
+                                    value="blue"
+                  >
+                                    blue
+                  </option>
+                  <option
+                                    value="CofC"
+                  >
+                                    CofC
+                  </option>
+                  <option
+                                    value="green"
+                  >
+                                    green
+                  </option>
+                  <option
+                                    value="mcDonalds"
+                  >
+                                    mcDonalds
+                  </option>
+</select>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Select Branding Theme:",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <option
+                      value="blue"
+>
+                      blue
+</option>,
+                    <option
+                      value="CofC"
+>
+                      CofC
+</option>,
+                    <option
+                      value="green"
+>
+                      green
+</option>,
+                    <option
+                      value="mcDonalds"
+>
+                      mcDonalds
+</option>,
+                  ],
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "blue",
+                      "value": "blue",
+                    },
+                    "ref": null,
+                    "rendered": "blue",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "CofC",
+                      "value": "CofC",
+                    },
+                    "ref": null,
+                    "rendered": "CofC",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "green",
+                      "value": "green",
+                    },
+                    "ref": null,
+                    "rendered": "green",
+                    "type": "option",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "mcDonalds",
+                      "value": "mcDonalds",
+                    },
+                    "ref": null,
+                    "rendered": "mcDonalds",
+                    "type": "option",
+                  },
+                ],
+                "type": "select",
+              },
+            ],
+            "type": "label",
           },
         ],
         "type": Symbol(react.fragment),
